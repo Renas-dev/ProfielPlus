@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-height: 100px;
+}
+
 .container {
     display: grid;
     grid-template-rows: 100px minmax(300px, 900px) 100px;
@@ -8,6 +15,7 @@
     }
     .main {
         grid-area: main;
+        height:calc(100vh - 100px);
 
     }
     .footer{
