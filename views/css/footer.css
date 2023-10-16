@@ -1,0 +1,17 @@
+.about-us {
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: lightgray;
+}
+
+
+.about-us-content li{
+    list-style-type: none;
+    color: black;
+}
+.socials-logo{
+    max-width: 10%;
+}
