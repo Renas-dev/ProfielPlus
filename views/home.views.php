@@ -11,6 +11,7 @@
 </head>
 <body class="container">
 <header class="header"><?php @require 'partials/header.php' ?></header>
+
 <div class="main">
     <h1>Hello</h1>
     <h2>purplemeow</h2>
