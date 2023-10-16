@@ -6,25 +6,27 @@ li, a, button{
     color: #ffffff;
 }
 
-.header{
+.header {
     height: 100px;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: lightgray;
+
 }
 
-ul{
+.nav ul{
     display: flex;
     list-style-type: none;
 }
-ul li a{
+.nav ul li a{
     padding: 0 20px;
     text-decoration: none;
     color: #5a5b5a;
 }
 
-li a::after{
+.nav a::after{
     content: '';
     display: block;
     height: 4px;
@@ -32,10 +34,10 @@ li a::after{
     background: #fde3e3;
     transition: all .5s;
 }
-li a:hover::after{
+.nav a:hover::after{
     width: 100%;
 }
-button{
+.Login-button{
     padding: 10px 20px;
     background-color: white;
     color: gray;

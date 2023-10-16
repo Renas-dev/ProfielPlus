@@ -10,15 +10,18 @@
     grid-template-rows: 100px minmax(300px, 900px) 100px;
     grid-gap: 10px;
     grid-template-areas: 'header' 'main' 'footer';
+
     .header {
-    grid-area: header;
+        grid-area: header;
     }
+
     .main {
         grid-area: main;
-        height:calc(100vh - 100px);
+        height: calc(100vh - 100px);
 
     }
-    .footer{
+
+    .footer {
         grid-area: footer;
     }
 }
