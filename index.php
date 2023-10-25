@@ -1,4 +1,9 @@
 <?php
+require 'core/Connection.php';
+require 'models/QueryBuilder.php';
+
+$qb = new QueryBuilder(new Connection());
+
 $routes = [
     "/" => "controllers/home.php",
     "/home" => "controllers/home.php",
