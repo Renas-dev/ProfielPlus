@@ -1,3 +1,10 @@
+<?php
+require_once '../includes/config_session.inc.php';
+require_once '../includes/signup_view.inc.php';
+require_once '../includes/login_view.inc.php';
+?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,24 +18,46 @@
 </head>
 <body class="container">
 <header class="header"><?php @require 'partials/header.php' ?></header>
+
 <div class="main">
-    <div class="login-container">
-        <h1>login</h1>
-        <ul>
-            <li class="login-content">
-                <label class="login-label"><input class="login-input" type="text"
-                                                  placeholder="Username">Username</label>
-            </li>
-            <li class="login-content">
-                <label class="login-label"><input class="login-input" type="password" placeholder="Password">Wachtwoord</label>
-            </li>
-        </ul>
-        <div class="login-sub-content">
-            <button type="button" class="login-button">Login</button>
-            <p>Forgot <a href="#">password?</a></p>
-        </div>
-    </div>
+    <h3><?php output_username(); ?></h3>
+
+    <?php
+    if (!isset($_SESSION["user_id"])) { ?>
+        <h2>Login</h2>
+
+        <form action="../includes/login.inc.php" method="post">
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="pwd" placeholder="Password">
+            <button class="button">Login</button>
+        </form>
+    <?php } ?>
+
+
+    <?php
+    check_login_errors();
+    ?>
+
+    <h2 class="register">Register</h2>
+
+    <p class="registerText"><a href="/register">No account click me to register</a></p>
+
+
+    <?php
+    check_signup_errors();
+    ?>
+
+    <?php
+    if (isset($_SESSION["user_id"])) { ?>
+        <br>
+        <h2>Logout</h2>
+
+        <form action="../includes/logout.inc.php" method="post">
+            <button class="button">Logout</button>
+        </form>
+    <?php } ?>
 </div>
+
 <footer class="footer"><?php @require 'partials/footer.php' ?></footer>
 </body>
 </html>

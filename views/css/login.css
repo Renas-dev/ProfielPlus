@@ -1,43 +1,59 @@
-.main {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.login-container {
-
+h2 {
+    text-align: center;
 }
 
-.login-container li {
-    list-style-type: none;
-
+form {
+    width: 20%;
+    margin: 0 40% 0 40%;
+    padding: 10px 0 10px 0;
 }
 
-.login-content {
-    margin-bottom: 20px;
-
-}
-
-.login-input {
-    box-sizing: border-box;
-    padding: 0 5rem 0.5rem 0.5rem;
-    border: 0;
+input {
+    display: block;
     width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
 }
 
-.login-input::placeholder {
-    color: transparent;
-    display: none;
+.button {
+    width: 40%;
+    margin: 0 30% 0 30%;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
 }
 
-.login-input:focus {
-    outline: none;
-    border-bottom: 2px solid black;
+.register {
+    margin-top: 60px;
 }
 
-.login-sub-content {
-    margin-top: 20px;
+.registerText {
+    text-align: center;
+    text-decoration: none;
+}
+
+.registerText a {
+    text-decoration: none;
+    color: blue;
+}
+
+.login-status {
+    text-align: center;
+}
+
+.form-error {
+    text-align: center;
+    color: red;
+}
+
+.form-success {
+    text-align: center;
+    color: green;
 }
