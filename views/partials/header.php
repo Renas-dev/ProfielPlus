@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="../../views/css/header.css">
 
 <div class="nav-logo">
-    <img src="../../views/public/images/angrycatlogo.png" alt="Moewie">
+    <img src="../../views/public/images/profileplusLogo.png" alt="mrsLogo">
 </div>
 <nav class="nav">
     <ul class="nav-items">
