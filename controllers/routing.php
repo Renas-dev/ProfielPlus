@@ -1,6 +1,6 @@
 <?php
 
-
+/* Basic routes to all the pages. */
 
 $routes = [
     "/" => "controllers/home.php",
