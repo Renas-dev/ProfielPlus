@@ -14,7 +14,8 @@
 
     </ul>
 </nav>
-    <a <?= ($_SERVER['REQUEST_URI'] == '/login' ? 'active' : '');?> href="/login">
-    <button class="Login-button">Login</button>
-    </a>
+<a <?= ($_SERVER['REQUEST_URI'] == '/login' ? 'active' : '');?> href="/login"> 
+    <img src="../../views/public/images/user-regular-24.png" alt="profile">
+    <p>Profile</p>
+</a>
 
