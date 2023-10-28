@@ -61,6 +61,11 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <input type="text"  name="email" autocomplete="off" value="<?= $user['email'] ?>">
                 </label>
             </div>
+            <div>
+                <label> password
+                    <input type="password"  name="pwd" autocomplete="off" value="">
+                </label>
+            </div>
             <button type="submit"  name="submit">update</button>
         </form>
     <?php }?>

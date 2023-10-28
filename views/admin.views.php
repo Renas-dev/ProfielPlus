@@ -1,5 +1,7 @@
 <?php
-require_once './includes/dbh.inc.php'; ?>
+require_once './includes/dbh.inc.php';
+if (isset($_SESSION["user_id"]) == '1') {
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -79,4 +81,7 @@ require_once './includes/dbh.inc.php'; ?>
 </body>
 </html>
 <?php
+} else {
+    echo 'You have no permission to view this page!';
+}
 ?>
