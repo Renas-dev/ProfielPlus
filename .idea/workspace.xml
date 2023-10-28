@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a51347c-23ac-4bbd-9197-5e208bdc6e03" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/controllers/routing.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/routing.php" afterDir="false" />
+    <list default="true" id="6a51347c-23ac-4bbd-9197-5e208bdc6e03" name="Changes" comment="Fixed spacing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/login.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/login.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/signup.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/signup.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/signup_view.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/signup_view.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/css/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/views/css/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/views/css/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/views/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/profile.views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/profile.views.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +50,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "profile-plus-nav-routing",
     "last_opened_file_path": "D:/PhpstormProjects/Websites/school/ProfielPlus/views",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -73,9 +83,22 @@
       <updated>1698318609593</updated>
       <workItem from="1698318610716" duration="10377000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixed spacing">
+      <option name="closed" value="true" />
+      <created>1698516412740</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698516412740</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed spacing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed spacing" />
   </component>
 </project>

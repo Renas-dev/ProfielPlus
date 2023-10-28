@@ -4,14 +4,18 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: lightgray;
+    background: #151515;
 }
-
 
 .about-us-content li{
     list-style-type: none;
-    color: black;
+    color: white;
 }
 .socials-logo{
     max-width: 10%;
+}
+
+.about-us a {
+    text-decoration: none;
+    color: orange;
 }

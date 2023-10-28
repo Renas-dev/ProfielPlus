@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if ($errors) {
             $_SESSION["errors_login"] = $errors;
 
-            header("location: ../views/login.views.php");
+            header("location: /login");
             die();
         }
 
@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         $_SESSION["last_regeneration"] = time();
 
-        header("location: ../views/login.views.php?login=success");
+        header("location: /login");
         $pdo = null;
         $statement = null;
 
@@ -53,6 +53,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         die("Query failed: " . $e->getMessage());
     }
 } else {
-    header("location: ../views/login.views.php.php");
+    header("location: /login.php");
     die();
 }

@@ -1,8 +1,6 @@
 <?php
 require 'core/Connection.php';
 require 'models/QueryBuilder.php';
-require_once 'includes/config_session.inc.php';
-require_once 'includes/home_view.inc.php';
 require 'controllers/routing.php';
 
 $qb = new QueryBuilder(new Connection());
