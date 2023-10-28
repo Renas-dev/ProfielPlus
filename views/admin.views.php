@@ -57,10 +57,13 @@ require_once './includes/dbh.inc.php'; ?>
                 <td><?=$user['updated_at']?></td>
 
                 <td>
-                    <form method="post" action="admin-update-user.views.php">
+                    <form method="post" action="/admin-update-user" >
                     <input type="hidden" name="userid" value="<?= $user['id']?>">
-                    <button type="submit"><a href="admin-update-user" class="text-light">Update</a></button>
-                    <button type="submit"><a href="delete.php?deleteid=<?= $user['id']?>" class="text-light">Delete</a></button>
+                    <button type="submit">Update</button>
+                    </form>
+                    <form method="post" action="/admin-delete-user" >
+                        <input type="hidden" name="userid" value="<?= $user['id']?>">
+                        <button type="submit">Delete</button>
                     </form>
                 </td>
 
