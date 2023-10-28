@@ -22,7 +22,6 @@ function signup_inputs()
     echo '<input type = "text" name = "lname" placeholder = "Lastname" >';
     echo '<input type = "text" name = "student_number" placeholder = "Student Number" >';
     echo '<input type = "text" name = "telephone" placeholder = "Telephone Number (Not required)" >';
-
 }
 
 function check_signup_errors()

@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: lightgray;
+    background: white   ;
 
 }
 
@@ -23,7 +23,7 @@
     display: block;
     height: 4px;
     width: 0;
-    background: #fde3e3;
+    background: #000000;
     transition: all .5s;
 }
 .nav a:hover::after{

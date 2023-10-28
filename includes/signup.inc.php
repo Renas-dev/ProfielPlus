@@ -43,13 +43,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             ];
             $_SESSION["signup_data"] = $signupData;
 
-            header("location: ../views/register.views.php");
+            header("location: /register");
             die();
         }
 
         create_user($pdo, $pwd, $username, $email, $fname, $lname, $student_number, $telephone);
 
-        header("location: ../views/login.views.php?signup=success");
+        header("location: /register");
 
         $pdo = null;
         $stmt = null;
@@ -60,6 +60,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         die("Query failed: " . $e->getMessage());
     }
 } else {
-    header("location: ../views/register.views.php");
+    header("location: /register");
     die();
 }

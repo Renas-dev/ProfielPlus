@@ -4,7 +4,6 @@
     padding: 0;
     max-height: 100px;
     font-family: sans-serif;
-    color: black;
 }
 
 .container {
@@ -23,5 +22,6 @@
 
     .footer {
         grid-area: footer;
+        color: white;
     }
 }
