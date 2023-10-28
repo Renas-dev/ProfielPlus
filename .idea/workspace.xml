@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a51347c-23ac-4bbd-9197-5e208bdc6e03" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c/storage_v2/_src_/schema/profielplus.8dIU_w.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c/storage_v2/_src_/schema/profielplus.8dIU_w.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/databasedump.md" beforeDir="false" afterPath="$PROJECT_DIR$/databasedump.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/adminUserUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/adminUserUpdate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/signup_model.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/signup_model.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin-update-user.views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin-update-user.views.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin.views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin.views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/routing.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/routing.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "profielplus-admin-login-logic",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "D:/PhpstormProjects/Websites/school/ProfielPlus/views",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
