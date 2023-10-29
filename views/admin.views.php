@@ -1,6 +1,7 @@
 <?php
 require_once './includes/dbh.inc.php';
-if (isset($_SESSION["user_id"]) == '1') {
+
+if (isset($_SESSION['user_username']) == 'admin') {
 ?>
 <!doctype html>
 <html lang="en">

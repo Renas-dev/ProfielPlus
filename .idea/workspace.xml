@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a51347c-23ac-4bbd-9197-5e208bdc6e03" name="Changes" comment="Fixed spacing">
+    <list default="true" id="6a51347c-23ac-4bbd-9197-5e208bdc6e03" name="Changes" comment="Updated index to send session.">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/login.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/login.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/signup.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/signup.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/signup_view.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/signup_view.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/views/css/default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/views/css/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/views/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login.views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.views.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/profile.views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/profile.views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin.views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin.views.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +42,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "profile-plus-nav-routing",
+    "git-widget-placeholder": "profile-plus-admin-check",
     "last_opened_file_path": "D:/PhpstormProjects/Websites/school/ProfielPlus/views",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -82,6 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698318609593</updated>
       <workItem from="1698318610716" duration="10377000" />
+      <workItem from="1698580527801" duration="660000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed spacing">
       <option name="closed" value="true" />
@@ -91,7 +84,23 @@
       <option name="project" value="LOCAL" />
       <updated>1698516412740</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed website navigation and edited styling">
+      <option name="closed" value="true" />
+      <created>1698518888198</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698518888198</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated index to send session.">
+      <option name="closed" value="true" />
+      <created>1698580841159</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698580841159</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +108,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed spacing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed spacing" />
+    <MESSAGE value="Fixed website navigation and edited styling" />
+    <MESSAGE value="Updated index to send session." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated index to send session." />
   </component>
 </project>
