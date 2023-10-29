@@ -2,6 +2,7 @@
 require 'core/Connection.php';
 require 'models/QueryBuilder.php';
 require 'controllers/routing.php';
+require_once 'includes/config_session.inc.php';
 
 $qb = new QueryBuilder(new Connection());
 
