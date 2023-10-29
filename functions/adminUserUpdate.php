@@ -23,5 +23,5 @@ if (isset($_POST['submit'])) {
     $hashedPwd = password_hash($pwd, PASSWORD_BCRYPT, $options);
 
     $query->execute();
-     header('location: /admin');
+    header('location: /admin');
 }

@@ -1,0 +1,52 @@
+.admin-container  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.admin-table  {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.admin-table th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-button {
+    padding: 8px 16px;
+    max-height: 42px;
+    min-width: 80px;
+    color: white;
+    border: 1px solid #4CAF50;
+    background-color: #befabe;
+    text-align: start;
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+}
+.admin-button-update{
+    padding: 8px 16px;
+    margin: 4px 2px;
+    min-width: 80px;
+    text-align: center;
+    cursor: pointer;
+    background-color: lightblue;
+    color: black;
+    border: 2px solid #008CBA;
+
+}
+.admin-button-delete{
+    padding: 8px 16px;
+    margin: 4px 2px;
+    min-width: 80px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f58787;
+    color: black;
+    border: 2px solid #f44336;
+}
+
+
