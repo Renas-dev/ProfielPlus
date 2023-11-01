@@ -13,8 +13,8 @@
       <schema-mapping>
         <introspection-scope>
           <node kind="schema">
-            <name qname="profielplus" />
             <name qname="@" />
+            <name qname="profielplus" />
           </node>
         </introspection-scope>
       </schema-mapping>

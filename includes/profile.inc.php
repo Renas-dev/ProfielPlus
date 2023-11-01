@@ -35,13 +35,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             ];
             $_SESSION["profile_data"] = $profileData;
 
-            header("location: ../views/profile.views.php");
+            header("location: /profile");
             die();
         }
 
         create_experience($pdo, $userId, $name, $colleagues, $functionality, $startDate, $endDate);
 
-        header("location: ../views/profile.views.php?profile=success");
+        header("location: /profile");
 
         $pdo = null;
         $stmt = null;
@@ -52,6 +52,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         die("Query failed: " . $e->getMessage());
     }
 } else {
-    header("location: ../views/profile.vieww.php");
+    header("location: /profile");
     die();
 }

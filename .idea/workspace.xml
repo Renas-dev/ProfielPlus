@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a51347c-23ac-4bbd-9197-5e208bdc6e03" name="Changes" comment="fixed admin styling + admin bug check">
-      <change afterPath="$PROJECT_DIR$/views/adminHeader.views.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/css/admin.form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/css/admin.home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c/storage_v2/_src_/schema/profielplus.8dIU_w.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c/storage_v2/_src_/schema/profielplus.8dIU_w.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/adminUserDelete.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/adminUserDelete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/adminUserUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/adminUserUpdate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin-add-user.views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin-add-user.views.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin-update-user.views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin-update-user.views.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin.views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin.views.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/profile.views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/profile.views.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "ProfielPlus-adminPage-styling",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/PhpstormProjects/Websites/school/ProfielPlus/views",
     "list.type.of.created.stylesheet": "CSS",
@@ -95,6 +85,7 @@
       <workItem from="1698318610716" duration="10377000" />
       <workItem from="1698580527801" duration="660000" />
       <workItem from="1698591539333" duration="6029000" />
+      <workItem from="1698838601306" duration="317000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed spacing">
       <option name="closed" value="true" />
