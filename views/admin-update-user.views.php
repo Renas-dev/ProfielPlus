@@ -1,5 +1,4 @@
 <?php
-require_once './includes/dbh.inc.php';
 $id = $_POST['userid'];
 $sql = "select * from users where id = $id ";
 $stmt = $pdo->prepare($sql);

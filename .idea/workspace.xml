@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a51347c-23ac-4bbd-9197-5e208bdc6e03" name="Changes" comment="fixed admin styling + admin bug check">
+    <list default="true" id="6a51347c-23ac-4bbd-9197-5e208bdc6e03" name="Changes" comment="fixed minor bug in adding workexperiences">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c/storage_v2/_src_/schema/profielplus.8dIU_w.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c/storage_v2/_src_/schema/profielplus.8dIU_w.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/Connection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/signup.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/signup.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin-update-user.views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin-update-user.views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin.views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin.views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/adminHeader.views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/adminHeader.views.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/profile.views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/profile.views.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +93,7 @@
       <workItem from="1698318610716" duration="10377000" />
       <workItem from="1698580527801" duration="660000" />
       <workItem from="1698591539333" duration="6029000" />
-      <workItem from="1698838601306" duration="317000" />
+      <workItem from="1698838601306" duration="3245000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed spacing">
       <option name="closed" value="true" />
@@ -111,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698580841159</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed minor bug in adding workexperiences">
+      <option name="closed" value="true" />
+      <created>1698839222681</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698839222681</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +138,7 @@
     <MESSAGE value="Fixed website navigation and edited styling" />
     <MESSAGE value="Updated index to send session." />
     <MESSAGE value="fixed admin styling + admin bug check" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed admin styling + admin bug check" />
+    <MESSAGE value="fixed minor bug in adding workexperiences" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed minor bug in adding workexperiences" />
   </component>
 </project>
