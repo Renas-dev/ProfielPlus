@@ -12,7 +12,34 @@
 
 <body class="container">
     <header class="header"><?php @require 'partials/header.php' ?></header>
-    <?= $id = $_POST['userid']; ?>
+    <div class="main">
+        <h1>Werkervaringen</h1>
+            <?php 
+            
+            $userId = $_POST["user_id"];
+            $sql = "SELECT * FROM work_experience WHERE users_id = :userId";
+            $stmt = $pdo->prepare($sql);
+            $stmt->bindParam(":userId", $userId, PDO::PARAM_INT);
+            $stmt->execute();
+            $experiences = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            foreach ($experiences as $experience) {
+
+
+            ?>
+            <div>
+                <table>
+                    <tr>
+                        <td><?= $experience ['name']; ?></td>
+                        <td><?= $experience ['colleagues']; ?></td>
+                        <td><?= $experience ['functionality']; ?></td>
+                        <td><?= $experience ['start_date']; ?></td>
+                        <td><?= $experience ['end_date']; ?></td>
+                    </tr>
+                </table>
+            </div>
+            <?php } ?>
+        </div>
     <footer class="footer"><?php @require 'partials/footer.php' ?></footer>
 </body>
 

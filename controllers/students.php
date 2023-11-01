@@ -1,2 +1,2 @@
 <?php
-require './views/students.php';
+require './views/students.views.php';

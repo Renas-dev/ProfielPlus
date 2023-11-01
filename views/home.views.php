@@ -12,36 +12,12 @@
 
 <body class="container">
     <header class="header"><?php @require 'partials/header.php' ?></header>
-
     <div class="main">
-        <div class="profile-header">
-            <h2>All profiles.</h2>
-        </div>
-        <div class="profile-container">
-            <?php
-            $sql = "select * from users";
-            $stmt = $pdo->prepare($sql);
-            $stmt->execute();
-
-            $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-            foreach ($users as $user) {
-            ?>
-
-                <div class="profile-name">
-                    <td><b><?= $user['username'] ?></b></td>
-                </div>
-
-                <div class="profiles-content">
-                    <tr>
-                        <td> Profile updated at: <?= $user['updated_at'] ?></td><br>
-                        <form method="post" action="/user-profile">
-                            <input type="hidden" name="userid" value="<?= $user['id'] ?>">
-                            <button class="admin-button-update" type="submit">Visit User</button>
-                        </form>
-                    </tr>
-                </div>
-            <?php } ?>
+        <h1>Welcome op de MRS Student Site.</h1>
+        <div>
+            <h3>
+                The page to use to keep everyone updated about what you are doing.
+            </h3>
         </div>
     </div>
 
@@ -49,5 +25,3 @@
 </body>
 
 </html>
-<?php
-?>
