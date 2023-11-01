@@ -13,5 +13,5 @@ $routes = [
     "/admin-add-user" => "controllers/admin-add-user.php",
     "/admin-update-user" => "controllers/admin-update-user.php",
     "/admin-delete-user" => "controllers/admin-delete-user.php",
-
+    "/user-profile" => "controllers/user-profile.php",
 ];

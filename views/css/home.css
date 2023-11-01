@@ -1,4 +1,13 @@
-h2 {
-    color: purple;
+.profile-header {
+    margin-top: 20px;
     margin-left: 20px;
+}
+
+.profile-container {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.profiles-content {
+    margin: 20px;
 }
