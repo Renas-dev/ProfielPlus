@@ -1,6 +1,4 @@
 <?php
-require_once './includes/dbh.inc.php';
-
 if ($_SESSION['user_username'] == 'admin') {
     ?>
     <!doctype html>

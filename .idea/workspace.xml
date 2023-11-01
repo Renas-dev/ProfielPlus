@@ -4,57 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a51347c-23ac-4bbd-9197-5e208bdc6e03" name="Changes" comment="fixed admin styling + admin bug check">
-      <change afterPath="$PROJECT_DIR$/controllers/edit-profile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/education.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/hobby.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/profile-update-education.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/profile-update-experience.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/profile-update-hobbies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/profile-update-subjects.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/subjects.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/work-experience.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/deleteEducation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/deleteHobby.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/deleteSubject.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/updateEducation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/updateHobby.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/updateSubjects.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/education.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/education_contr.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/education_model.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/education_view.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/hobbies.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/hobbies_contr.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/hobbies_model.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/hobbies_view.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/subjects.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/subjects_contr.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/subjects_model.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/subjects_view.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/edit-profile.views.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/editEducation.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/editHobbies.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/editSubjects.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/education.views.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/hobby.views.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/subjects.views.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/work_experience.views.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c/storage_v2/_src_/schema/profielplus.8dIU_w.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c/storage_v2/_src_/schema/profielplus.8dIU_w.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/routing.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/routing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/adminUserAdd.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/adminUserAdd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/deleteExperience.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/deleteExperience.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/updateExperience.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/updateExperience.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/profile.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/workexperience.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/profile_contr.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/workexperience_contr.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/profile_model.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/workexperience_model.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/profile_view.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/workexperience_view.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/editExperience.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/editExperience.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/profile.views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/profile.views.php" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="ProfielPlus-databasedump-structuring" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -132,6 +82,7 @@
       <workItem from="1698318610716" duration="10377000" />
       <workItem from="1698580527801" duration="660000" />
       <workItem from="1698591539333" duration="6029000" />
+
     </task>
     <task id="LOCAL-00001" summary="Fixed spacing">
       <option name="closed" value="true" />
@@ -157,7 +108,31 @@
       <option name="project" value="LOCAL" />
       <updated>1698580841159</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed minor bug in adding workexperiences">
+      <option name="closed" value="true" />
+      <created>1698839222681</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698839222681</updated>
+    </task>
+    <task id="LOCAL-00005" summary="removed not used files + refactored some code">
+      <option name="closed" value="true" />
+      <created>1698842062065</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698842062065</updated>
+    </task>
+    <task id="LOCAL-00006" summary="removed not used files + refactored some code">
+      <option name="closed" value="true" />
+      <created>1698843160307</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698843160307</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +143,8 @@
     <MESSAGE value="Fixed website navigation and edited styling" />
     <MESSAGE value="Updated index to send session." />
     <MESSAGE value="fixed admin styling + admin bug check" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed admin styling + admin bug check" />
+    <MESSAGE value="fixed minor bug in adding workexperiences" />
+    <MESSAGE value="removed not used files + refactored some code" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed not used files + refactored some code" />
   </component>
 </project>

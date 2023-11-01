@@ -11,7 +11,7 @@
 <body class="container">
 <header class="header"><?php @require 'partials/header.php' ?></header>
 <div class="main">
-    <h1>Hello im about us</h1>
+    <h1>Hello im the students page</h1>
 </div>
 
 <footer class="footer"><?php @require 'partials/footer.php' ?></footer>
