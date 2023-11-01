@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a51347c-23ac-4bbd-9197-5e208bdc6e03" name="Changes" comment="removed not used files + refactored some code">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/databasedump.md" beforeDir="false" afterPath="$PROJECT_DIR$/databasedump.md" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "profile-plus-hobby-school-experience",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/PhpstormProjects/Websites/school/ProfielPlus/views",
     "list.type.of.created.stylesheet": "CSS",
@@ -84,7 +82,7 @@
       <workItem from="1698318610716" duration="10377000" />
       <workItem from="1698580527801" duration="660000" />
       <workItem from="1698591539333" duration="6029000" />
-      <workItem from="1698838601306" duration="4934000" />
+
     </task>
     <task id="LOCAL-00001" summary="Fixed spacing">
       <option name="closed" value="true" />

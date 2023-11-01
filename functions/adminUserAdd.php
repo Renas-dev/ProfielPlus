@@ -22,7 +22,7 @@ values ('$firstname', '$lastname', '$studentnumber', '$telephone' ,'$username',:
     $hashedPwd = password_hash($pwd, PASSWORD_BCRYPT, $options);
 
     $stmt->execute();
-    header('location:/admin');
+    header('location: /admin');
 }
 
 
