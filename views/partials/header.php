@@ -6,7 +6,7 @@
 <nav class="nav">
     <ul class="nav-items">
         <li><a <?= ($_SERVER['REQUEST_URI'] == '/home' ? 'active' : ''); ?> href="/home">Home</a></li>
-        <li><a <?= ($_SERVER['REQUEST_URI'] == '/about-us' ? 'active' : ''); ?> href="/about-us">About us</a></li>
+        <li><a <?= ($_SERVER['REQUEST_URI'] == '/students' ? 'active' : ''); ?> href="/students">Students</a></li>
         <li><a <?= ($_SERVER['REQUEST_URI'] == '/profile' ? 'active' : ''); ?> href="/profile">Profile</a></li>
         <?php if ($_SESSION['user_username'] == 'admin') {
             require './views/adminHeader.views.php';
