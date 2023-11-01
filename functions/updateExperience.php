@@ -18,4 +18,4 @@ $stmt->bindParam(":start_date", $start_date);
 $stmt->bindParam(":end_date", $end_date);
 $stmt->execute();
 
-header('location: ../views/profile.views.php');
+header('location: /work-experience');

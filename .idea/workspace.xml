@@ -5,8 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a51347c-23ac-4bbd-9197-5e208bdc6e03" name="Changes" comment="fixed admin styling + admin bug check">
+      <change afterPath="$PROJECT_DIR$/controllers/edit-profile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/education.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/hobby.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/profile-update-education.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/profile-update-experience.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/profile-update-hobbies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/profile-update-subjects.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/subjects.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/work-experience.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/deleteEducation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/deleteHobby.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/deleteSubject.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/updateEducation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/updateHobby.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/updateSubjects.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/education.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/education_contr.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/education_model.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/education_view.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/hobbies.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/hobbies_contr.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/hobbies_model.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/hobbies_view.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/subjects.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/subjects_contr.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/subjects_model.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/subjects_view.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/edit-profile.views.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/editEducation.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/editHobbies.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/editSubjects.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/education.views.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/hobby.views.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/subjects.views.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/work_experience.views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c/storage_v2/_src_/schema/profielplus.8dIU_w.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18528044-f446-40de-8ed8-baa66791ba0c/storage_v2/_src_/schema/profielplus.8dIU_w.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/routing.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/routing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/adminUserAdd.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/adminUserAdd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/deleteExperience.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/deleteExperience.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/updateExperience.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/updateExperience.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/profile.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/workexperience.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/profile_contr.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/workexperience_contr.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/profile_model.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/workexperience_model.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/profile_view.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/workexperience_view.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/editExperience.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/editExperience.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/profile.views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/profile.views.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +96,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "profile-plus-hobby-school-experience",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/PhpstormProjects/Websites/school/ProfielPlus/views",
     "list.type.of.created.stylesheet": "CSS",
@@ -85,7 +132,6 @@
       <workItem from="1698318610716" duration="10377000" />
       <workItem from="1698580527801" duration="660000" />
       <workItem from="1698591539333" duration="6029000" />
-      <workItem from="1698838601306" duration="317000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed spacing">
       <option name="closed" value="true" />

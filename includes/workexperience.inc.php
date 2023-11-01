@@ -10,8 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     try {
         require_once 'dbh.inc.php';
-        require_once 'profile_model.inc.php';
-        require_once 'profile_contr.inc.php';
+        require_once 'workexperience_model.inc.php';
+        require_once 'workexperience_contr.inc.php';
 
         // Error handlers
         $errors = [];
@@ -35,13 +35,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             ];
             $_SESSION["profile_data"] = $profileData;
 
-            header("location: /profile");
+            header("location: /work-experience");
             die();
         }
 
         create_experience($pdo, $userId, $name, $colleagues, $functionality, $startDate, $endDate);
 
-        header("location: /profile");
+        header("location: /work-experience");
 
         $pdo = null;
         $stmt = null;
@@ -52,6 +52,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         die("Query failed: " . $e->getMessage());
     }
 } else {
-    header("location: /profile");
+    header("location: /work-experience");
     die();
 }
