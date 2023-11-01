@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6a51347c-23ac-4bbd-9197-5e208bdc6e03" name="Changes" comment="removed not used files + refactored some code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/about-us.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/students.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/routing.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/routing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/about-us.views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/students.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/databasedump.md" beforeDir="false" afterPath="$PROJECT_DIR$/databasedump.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="ProfielPlus-databasedump-structuring" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,7 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "ProfielPlus-databasedump-structuring",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/PhpstormProjects/Websites/school/ProfielPlus/views",
     "list.type.of.created.stylesheet": "CSS",
