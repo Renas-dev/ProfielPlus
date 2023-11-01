@@ -2,7 +2,6 @@
 require_once './includes/config_session.inc.php';
 require_once './includes/profile_view.inc.php';
 require_once './includes/home_view.inc.php';
-require_once './includes/dbh.inc.php';
 ?>
 
 <!doctype html>

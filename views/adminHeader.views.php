@@ -1,5 +1,4 @@
-<?php require_once './includes/dbh.inc.php';
-
+<?php
 if ($_SESSION['user_username'] == 'admin') {
     ?>
     <li><a <?= ($_SERVER['REQUEST_URI'] == '/admin' ? 'active' : ''); ?> href="/admin">Admin Page</a></li>

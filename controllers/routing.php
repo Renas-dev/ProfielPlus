@@ -5,7 +5,7 @@
 $routes = [
     "/" => "controllers/home.php",
     "/home" => "controllers/home.php",
-    "/about-us" => "controllers/about-us.php",
+    "/students" => "controllers/students.php",
     "/register" => "controllers/register.php",
     "/login" => "controllers/login.php",
     "/profile" => "controllers/profile.php",

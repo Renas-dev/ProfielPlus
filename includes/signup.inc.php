@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         create_user($pdo, $pwd, $username, $email, $fname, $lname, $student_number, $telephone);
 
-        header("location: /register");
+        header("location: /login");
 
         $pdo = null;
         $stmt = null;
