@@ -1,8 +1,18 @@
-CREATE DATABASE ProfielPlus;
+Welcome to MRS ProfielPlus project,
+to make sure our website works as intended u have to follow these steps below.
+Write the following commands in the query console.
 
-use ProfielPlus;
+First command we run is to assure other database from other projects groups are deleted.
+1. Drop DATABASE ProfielPlus;
 
-CREATE TABLE users
+Second step will create the database for our application.
+2. CREATE DATABASE ProfielPlus;
+
+Third we will use the created database.
+3. USE DATABASE ProfielPlus;
+
+Fourth we will create a table USERS this is needed to Login and for the admin to create users.
+4. CREATE TABLE users
 (
 id             INT(11)     NOT NULL AUTO_INCREMENT PRIMARY KEY,
 firstname      VARCHAR(32) NULL,
@@ -16,12 +26,8 @@ created_at     DATETIME    NOT NULL DEFAULT CURRENT_TIMESTAMP,
 updated_at     DATETIME    NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
-select *
-FROM users;
-
-drop table users;
-
-CREATE TABLE work_experience
+Fifth We will create a table for users to add their work experiences.
+5. CREATE TABLE work_experience
 (
 id            INT(11)  NOT NULL AUTO_INCREMENT PRIMARY KEY,
 users_id      INT(11)  NOT NULL,
@@ -34,31 +40,10 @@ created_at    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 updated_at    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
-select *
-FROM work_experience;
 
-drop table work_experience;
-
-SELECT *
-FROM work_experience
-WHERE users_id = 1;
-
-DELETE
-FROM work_experience
-WHERE id = 1;
-
-UPDATE work_experience
-SET name          = '1',
-colleagues    = '2',
-functionality = '3',
-start_date    = '2020-10-21',
-end_date      = '2020-10-21'
-WHERE id = 3;
-
-CREATE TABLE education_users
+Sixth we will create a table for users to add their educations.
+6. CREATE TABLE education_users
 (
 id       INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 users_id INT(11) NOT NULL
 );
-
-INSERT INTO users (username, pwd, email, firstname, lastname, student_number, telephone) VALUES (:username, :pwd, :email, :fname, :lname, :student_number, :telephone);
