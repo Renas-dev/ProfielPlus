@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+// This file has the display functions to show text on the page that calls a function
 function education_inputs()
 {
     echo '<input type="hidden" name="userId" value="' . output_id() . '">';

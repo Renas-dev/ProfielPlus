@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+// These are the functions for error handling and create
 function is_input_empty(string $username, string $pwd, string $email, string $fname, string $lname, string $student_number)
 {
     if (empty($username) || empty($pwd) || empty($email) || empty($fname)  || empty($lname)  || empty($student_number)) {

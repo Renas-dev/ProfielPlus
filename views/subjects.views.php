@@ -19,6 +19,8 @@ require_once './includes/dbh.inc.php';
 <body class="container">
 <header class="header"><?php @require 'partials/header.php' ?></header>
 
+<!-- The subjects file checks if a user is logged in by checking the session and if so it displays the
+form to create a subject there is also an edit and delete button at the display of the created subjects. -->
 <div class="main">
     <h2>Create Subject</h2>
 

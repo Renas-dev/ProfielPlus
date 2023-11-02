@@ -1,16 +1,15 @@
 <?php
-
+// This gets the post from the form
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $username = $_POST["username"];
     $pwd = $_POST["pwd"];
     $email = $_POST["email"];
-
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $student_number = $_POST['student_number'];
     $telephone = $_POST['telephone'];
 
-
+// this requires the required files and has error handling and eventually uses the create function with the required values from the post.
     try {
         require_once 'dbh.inc.php';
         require_once 'signup_model.inc.php';

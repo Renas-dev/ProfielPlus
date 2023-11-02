@@ -1,5 +1,5 @@
 <?php
-
+// This gets the post from the form
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $userId = $_POST["userId"];
     $name = $_POST["name"];
@@ -8,6 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $startDate = $_POST["startDate"];
     $endDate = $_POST["endDate"];
 
+    // this requires the required files and has error handling and eventually uses the create function with the required values from the post.
     try {
         require_once 'dbh.inc.php';
         require_once 'workexperience_model.inc.php';

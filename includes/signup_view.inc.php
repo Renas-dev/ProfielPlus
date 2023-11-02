@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+// This file has the display functions to show text on the page that calls a function
 function signup_inputs()
 {
     if (isset($_SESSION["signup_data"]["username"]) && !isset($_SESSION["errors_signup"]["username_taken"])) {

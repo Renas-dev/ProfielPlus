@@ -1,6 +1,8 @@
 <?php
 
 declare(strict_types=1);
+
+//This file has the functions for the SELECT query
 function get_user(object $pdo, string $username) {
     $query = "SELECT * FROM users WHERE username = :username;";
     $stmt = $pdo->prepare($query);

@@ -1,4 +1,5 @@
 <?php
+// These files are required to display, connect to session and connect to database
 require_once './includes/config_session.inc.php';
 require_once './includes/hobbies_view.inc.php';
 require_once './includes/home_view.inc.php';
@@ -19,6 +20,8 @@ require_once './includes/dbh.inc.php';
 <body class="container">
 <header class="header"><?php @require 'partials/header.php' ?></header>
 
+<!-- The hobby file checks if a user is logged in by checking the session and if so it displays the
+form to create an hobby there is also an edit and delete button at the display of the created hobbies. -->
 <div class="main">
     <h2>Create Hobby</h2>
 

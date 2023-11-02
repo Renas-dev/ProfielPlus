@@ -1,8 +1,11 @@
 <?php
+// The require statement makes a connection with the Database
 require_once './includes/dbh.inc.php';
 
+// This gets the selected id from the post method
 $selectedId = $_POST['id'];
 
+// This SELECT query is to prefill the selected work experience form.
 $sql = "SELECT * FROM work_experience WHERE id = $selectedId";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
