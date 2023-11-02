@@ -12,10 +12,10 @@ function experience_inputs()
     echo '<input type="date" name="endDate" placeholder="End Date">';
 }
 
-function check_profile_errors()
+function check_work_experience_errors()
 {
-    if (isset($_SESSION['errors_profile'])) {
-        $errors = $_SESSION['errors_profile'];
+    if (isset($_SESSION['errors_work-experience'])) {
+        $errors = $_SESSION['errors_work-experience'];
 
         echo "<br>";
 
@@ -23,8 +23,8 @@ function check_profile_errors()
             echo '<p class="form-error">' . $error . '</p>';
         }
 
-        unset($_SESSION['errors_profile']);
-    } else if (isset($_GET["profile"]) && $_GET["profile"] === "success") {
+        unset($_SESSION['errors_work-experience']);
+    } else if (isset($_GET["work_experience"]) && $_GET["work_experience"] === "success") {
         echo '<p class="form-success">Experience successfully added!</p>';
         echo "<br>";
     }

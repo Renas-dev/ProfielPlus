@@ -31,7 +31,7 @@ require_once './includes/dbh.inc.php';
     <?php } else echo "You are not logged in!" ?>
 
     <?php
-    check_profile_errors();
+    check_work_experience_errors();
 
     if (isset($_SESSION["user_id"])) {
         $userId = $_SESSION["user_id"];

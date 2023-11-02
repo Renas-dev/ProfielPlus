@@ -9,7 +9,7 @@ require_once './includes/config_session.inc.php';
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Edit profile</title>
     <link rel="stylesheet" href="../views/css/default.css">
     <link rel="stylesheet" href="../views/css/login.css">
 </head>
@@ -17,10 +17,10 @@ require_once './includes/config_session.inc.php';
 <header class="header"><?php @require 'partials/header.php' ?></header>
 
 <div class="main">
-    <a href="/work-experience"><button>Experience</button></a>
-    <a href="/hobby"><button>Hobby</button></a>
-    <a href="/education"><button>Education</button></a>
-    <a href="/subjects"><button>Subjects</button></a>
+    <a href="/work-experience"><button class="button">Experience</button></a>
+    <a href="/hobby"><button class="button">Hobby</button></a>
+    <a href="/education"><button class="button">Education</button></a>
+    <a href="/subjects"><button class="button">Subjects</button></a>
 </div>
 
 <footer class="footer"><?php @require 'partials/footer.php' ?></footer>

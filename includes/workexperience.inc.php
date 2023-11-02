@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         require_once 'config_session.inc.php';
 
         if ($errors) {
-            $_SESSION["errors_signup"] = $errors;
+            $_SESSION["errors_work-experience"] = $errors;
 
             $profileData = [
                 "userId" => $userId,
