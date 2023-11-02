@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+// These are the functions for error handling and create
 function is_input_empty(string $userId)
 {
     if (empty($userId)) {

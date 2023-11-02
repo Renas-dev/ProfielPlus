@@ -1,6 +1,8 @@
 <?php
 
 declare(strict_types=1);
+
+//This file has the functions for the SELECT and INSERT queries
 function get_username(object $pdo, string $username)
 {
     $query = "SELECT username FROM users WHERE username = :username;";

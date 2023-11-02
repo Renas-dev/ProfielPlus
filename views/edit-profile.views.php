@@ -1,4 +1,7 @@
 <?php
+/* This file has buttons to redirect you to edit your profile.
+The require statement makes a connection with the Database
+*/
 require_once './includes/config_session.inc.php';
 ?>
 

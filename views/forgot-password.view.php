@@ -11,7 +11,7 @@
 <body>
 
 <h1>Forgot password</h1>
-
+<!-- This file sends the email input using the post method to sendPasswordReset.php where it will be used. -->
 <form method="post" action="../functions/sendPasswordReset.php">
     <label for="email">Email</label>
     <input type="email" name="email" id="email">

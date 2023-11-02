@@ -1,4 +1,5 @@
 <?php
+// The require statement makes a connection with the Database
 require_once '../includes/dbh.inc.php';
 
 $selectedId = $_GET['id'];
