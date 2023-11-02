@@ -31,6 +31,8 @@ require_once 'includes/login_view.inc.php';
             <input type="password" name="pwd" placeholder="Password">
             <button class="button">Login</button>
         </form>
+
+        <a href="/forgot-password">Forgot password?</a>
     <?php } ?>
 
 
