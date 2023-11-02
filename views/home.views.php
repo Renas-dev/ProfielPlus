@@ -19,6 +19,41 @@
                 The page to use to keep everyone updated about what you are doing.
             </h3>
         </div>
+        <div style="width: 80%">
+            <h1 class="about">About us</h1>
+            <div class="about-coders">
+                <?php
+                // This is a multi dimensional array with all the dev info.
+                $classmateInfo = [
+                    "Mitchel Meskes" => [
+                        "Role" => "Dev",
+                        "Age" => "20",
+                        "Bio" => "If you look to the left you see nothing to the right.",
+                    ],
+                    "Renas Khalil" => [
+                        "Role" => "Dev",
+                        "Age" => "23",
+                        "Bio" => "Cats are the best pets!",
+                    ],
+                    "Sadek Al Mouaswi" => [
+                        "Role" => "Dev",
+                        "Age" => "21",
+                        "Bio" => "You can never have enough coffee!",
+                    ]
+                ];
+
+                // A loop that prints all the keys and values from the multi dimensional array.
+                $keys = array_keys($classmateInfo);
+                for ($i = 0; $i < count($classmateInfo); $i++) {
+                    echo "<h2><b>" . $keys[$i] . "</b></h2><br>";
+                    foreach ($classmateInfo[$keys[$i]] as $key => $value) {
+                        echo "<b>" . $key . " : </b>" . $value . "<br>";
+                    }
+                    echo "<br>";
+                }
+                ?>
+            </div>
+        </div>
     </div>
 
     <footer class="footer"><?php @require 'partials/footer.php' ?></footer>

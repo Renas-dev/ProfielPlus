@@ -11,3 +11,14 @@ h3 {
     height: 100px;
     width: 100px;
 }
+
+.about {
+    float: right;
+
+}
+
+.about-coders {
+    float:  right; 
+    margin: auto;
+    clear: both;
+}
