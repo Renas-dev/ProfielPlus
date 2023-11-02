@@ -24,7 +24,7 @@ require_once './includes/dbh.inc.php';
 
     <?php
     if (isset($_SESSION["user_id"])) { ?>
-        <form action="../includes/hobbies.inc.php" method="post">
+        <form action="../includes/hobbies.inc.php" method="post" enctype="multipart/form-data">
             <?php hobby_inputs(); ?>
             <button class="button">submit</button>
         </form>
@@ -41,21 +41,30 @@ require_once './includes/dbh.inc.php';
         $stmt->execute();
         $hobbies = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+
         foreach ($hobbies as $hobby) {
             ?>
             <div>
                 <p hidden='hidden'><?= $hobby['id'] ?></p>
-                <h3><?= $hobby['name'] ?></h3>
+                <img src="<?= $hobby['image'] ?>" alt="Hobby Image">
+                <?php if (!empty($hobby['name'])) { // Check if the name field is not empty
+                    echo '<p>Hobby: ' . $hobby['name']. '</p>';
+                } ?>
+                <?php if (!empty($hobby['hobby_description'])) { // Check if the name field is not empty
+                    echo '<p>Hobby description: ' . $hobby['hobby_description'] . '</p>';
+                } ?>
+                <?php if (!empty($hobby['interest'])) { // Check if the name field is not empty
+                    echo '<p>Interest: ' . $hobby['interest']. '</p>';
+                } ?>
                 <form method='post' action='/profile-update-hobbies'>
                     <input type='hidden' name='id' value=<?= $hobby['id'] ?>>
                     <button>Edit</button>
                 </form>
-                <a href='../functions/deleteHobby.php?id=<?= $hobby['id'] ?>'>
+                <a href="../functions/deleteHobby.php?id=<?= $hobby['id'] ?>&img=<?= $hobby['image'] ?>">
                     <button>Delete</button>
                 </a>
             </div>
             <br>
-
             <?php
         }
     }

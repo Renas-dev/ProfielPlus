@@ -13,21 +13,21 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         // Error handlers
         $errors = [];
 
-        if (is_input_empty($userId, $name)) {
+        if (is_input_empty($userId, $name, $grade)) {
             $errors["empty_input"] = "Fill in all fields!";
         }
 
         require_once 'config_session.inc.php';
 
         if ($errors) {
-            $_SESSION["errors_signup"] = $errors;
+            $_SESSION["errors_subjects"] = $errors;
 
             $subjectsData = [
                 "userId" => $userId,
                 "name" => $name,
                 "grade" => $grade
             ];
-            $_SESSION["education_data"] = $subjectsData;
+            $_SESSION["subjects_data"] = $subjectsData;
 
             header("location: /subjects");
             die();
