@@ -1,4 +1,5 @@
 <?php
+// These files are required to display, connect to session and connect to database
 require_once 'includes/config_session.inc.php';
 require_once 'includes/signup_view.inc.php';
 require_once 'includes/login_view.inc.php';
@@ -19,6 +20,8 @@ require_once 'includes/login_view.inc.php';
 <body class="container">
 <header class="header"><?php @require 'partials/header.php' ?></header>
 
+<!-- The login file checks if a user is not logged in by checking the session and if so it displays the
+form to login else it won't. The same for logout if the user is logged in it shows the logout button else it doesn't display  -->
 <div class="main">
     <h3><?php output_username(); ?></h3>
 
@@ -31,6 +34,8 @@ require_once 'includes/login_view.inc.php';
             <input type="password" name="pwd" placeholder="Password">
             <button class="button">Login</button>
         </form>
+
+        <a href="/forgot-password">Forgot password?</a>
     <?php } ?>
 
 

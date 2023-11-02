@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+// These are the functions for error handling for logging in
 function is_input_empty(string $username, string $pwd)
 {
     if (empty($username) || empty($pwd)) {

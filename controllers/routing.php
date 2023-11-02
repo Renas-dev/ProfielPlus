@@ -8,6 +8,7 @@ $routes = [
     "/students" => "controllers/students.php",
     "/register" => "controllers/register.php",
     "/login" => "controllers/login.php",
+    "/forgot-password" => "controllers/forgot-password.php",
     "/profile" => "controllers/profile.php",
     "/edit-profile" => "controllers/edit-profile.php",
     "/work-experience" => "controllers/work-experience.php",

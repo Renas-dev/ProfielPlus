@@ -1,4 +1,5 @@
 <?php
+// These files are required to display, connect to session and connect to database
 require_once 'includes/config_session.inc.php';
 require_once 'includes/signup_view.inc.php';
 require_once 'includes/home_view.inc.php';
@@ -18,16 +19,18 @@ require_once 'includes/home_view.inc.php';
 <body class="container">
 <header class="header"><?php @require 'partials/header.php' ?></header>
 <div class="main">
-<h2>Register</h2>
+    <h2>Register</h2>
 
-<form action="../includes/signup.inc.php" method="post">
-    <?php signup_inputs() ?>
-    <button class="button">Signup</button>
-</form>
+    <!-- This form sends you to signup.inc.php and uses the signup_inputs() function to display the form.
+    It uses the post method to send the files to where it registers you. -->
+    <form action="../includes/signup.inc.php" method="post">
+        <?php signup_inputs() ?>
+        <button class="button">Signup</button>
+    </form>
 
-<?php
-check_signup_errors();
-?>
+    <?php
+    check_signup_errors();
+    ?>
 </div>
 <footer class="footer"><?php @require 'partials/footer.php' ?></footer>
 </body>

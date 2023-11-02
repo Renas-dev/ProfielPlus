@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+// This file has the display functions to show text on the page that calls a function
 function education_inputs()
 {
     echo '<input type="hidden" name="userId" value="' . output_id() . '">';
@@ -10,8 +11,8 @@ function education_inputs()
 
 function check_education_errors()
 {
-    if (isset($_SESSION['errors_profile'])) {
-        $errors = $_SESSION['errors_profile'];
+    if (isset($_SESSION['errors_education'])) {
+        $errors = $_SESSION['errors_education'];
 
         echo "<br>";
 
@@ -19,8 +20,8 @@ function check_education_errors()
             echo '<p class="form-error">' . $error . '</p>';
         }
 
-        unset($_SESSION['errors_profile']);
-    } else if (isset($_GET["profile"]) && $_GET["profile"] === "success") {
+        unset($_SESSION['errors_education']);
+    } else if (isset($_GET["education"]) && $_GET["education"] === "success") {
         echo '<p class="form-success">Education successfully added!</p>';
         echo "<br>";
     }

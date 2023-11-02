@@ -1,9 +1,10 @@
 <?php
-
+// This gets the post from the form
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $userId = $_POST["userId"];
     $name = $_POST["name"];
 
+    // this requires the required files and has error handling and eventually uses the create function with the required values from the post.
     try {
         require_once 'dbh.inc.php';
         require_once 'education_model.inc.php';
@@ -19,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         require_once 'config_session.inc.php';
 
         if ($errors) {
-            $_SESSION["errors_signup"] = $errors;
+            $_SESSION["errors_education"] = $errors;
 
             $educationData = [
                 "userId" => $userId,

@@ -2,9 +2,10 @@
 
 declare(strict_types=1);
 
-function is_input_empty(string $userId, string $name)
+// These are the functions for error handling and create
+function is_input_empty(string $userId, string $name, string $grade)
 {
-    if (empty($userId) || empty($name)) {
+    if (empty($userId) || empty($name) || empty($grade)) {
         return true;
     } else {
         return false;

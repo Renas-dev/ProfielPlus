@@ -19,6 +19,8 @@ require_once './includes/dbh.inc.php';
 <body class="container">
 <header class="header"><?php @require 'partials/header.php' ?></header>
 
+<!-- The work experience file checks if a user is logged in by checking the session and if so it displays the
+form to create a work experience there is also an edit and delete button at the display of the created work experiences. -->
 <div class="main">
     <h2>Create Work experience</h2>
 
@@ -31,7 +33,7 @@ require_once './includes/dbh.inc.php';
     <?php } else echo "You are not logged in!" ?>
 
     <?php
-    check_profile_errors();
+    check_work_experience_errors();
 
     if (isset($_SESSION["user_id"])) {
         $userId = $_SESSION["user_id"];
