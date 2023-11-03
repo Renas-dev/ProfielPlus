@@ -7,11 +7,12 @@
     background: #151515;
 }
 
-.about-us-content li{
+.about-us-content li {
     list-style-type: none;
     color: white;
 }
-.socials-logo{
+
+.socials-logo {
     max-width: 10%;
 }
 

@@ -1,9 +1,10 @@
-.admin-container  {
+.admin-container {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
 }
-.admin-table  {
+
+.admin-table {
     text-align: center;
     border-collapse: collapse;
 }
@@ -23,11 +24,13 @@
     background-color: #befabe;
     text-align: start;
 }
-.button-container{
+
+.button-container {
     display: flex;
     flex-direction: column;
 }
-.admin-button-update{
+
+.admin-button-update {
     padding: 8px 16px;
     margin: 4px 2px;
     min-width: 80px;
@@ -38,7 +41,8 @@
     border: 2px solid #008CBA;
 
 }
-.admin-button-delete{
+
+.admin-button-delete {
     padding: 8px 16px;
     margin: 4px 2px;
     min-width: 80px;

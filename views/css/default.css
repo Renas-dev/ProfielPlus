@@ -11,6 +11,7 @@
     grid-template-rows: 100px 100vh 100px;
     grid-gap: 10px;
     grid-template-areas: 'header' 'main' 'footer';
+
     .header {
         grid-area: header;
     }
