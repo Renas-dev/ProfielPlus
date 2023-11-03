@@ -23,7 +23,7 @@ require_once './includes/home_view.inc.php';
         <div class="workexperience">
             <h1>Workexperience</h1>
             <?php
-            
+
             // This is an SELECT statement that is used to display experiences.
             $userId = $_SESSION["user_id"];
             $sql = "SELECT * FROM work_experience WHERE users_id = :userId";
@@ -46,7 +46,7 @@ require_once './includes/home_view.inc.php';
         </div>
         <div class="hobbys">
             <h1>Hobbys</h1>
-            <?php 
+            <?php
 
             // This is an SELECT statement that is used to display hobbys.
             $userId = $_SESSION["user_id"];
@@ -61,10 +61,16 @@ require_once './includes/home_view.inc.php';
 
             ?>
                 <div class="userInfo">
-                    <img src="<?= $hobby['image']; ?>"></img>
-                    <p><b>Name of the hobby:</b> <?= $hobby['name']; ?></p>
-                    <p><b>Description:</b> <?= $hobby['hobby_description']; ?></p>
-                    <p><b>Interest:</b> <?= $hobby['interest']; ?></p>
+                    <img src="<?= $hobby['image'] ?>" alt="Hobby Image">
+                    <?php if (!empty($hobby['name'])) { // Check if the name field is not empty
+                        echo '<p><b>Name of the hobby:</b> ' . $hobby['name'] . '</p>';
+                    } ?>
+                    <?php if (!empty($hobby['hobby_description'])) { // Check if the name field is not empty
+                        echo '<p><b>Description:</b> ' . $hobby['hobby_description'] . '</p>';
+                    } ?>
+                    <?php if (!empty($hobby['interest'])) { // Check if the name field is not empty
+                        echo '<p><b>Interest:</b> ' . $hobby['interest'] . '</p>';
+                    } ?>
                 </div>
             <?php } ?>
         </div>
