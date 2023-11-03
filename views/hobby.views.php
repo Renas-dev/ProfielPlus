@@ -51,13 +51,13 @@ form to create an hobby there is also an edit and delete button at the display o
                 <p hidden='hidden'><?= $hobby['id'] ?></p>
                 <img src="<?= $hobby['image'] ?>" alt="Hobby Image">
                 <?php if (!empty($hobby['name'])) { // Check if the name field is not empty
-                    echo '<p>Hobby: ' . $hobby['name']. '</p>';
+                    echo '<p>Hobby: ' . $hobby['name'] . '</p>';
                 } ?>
                 <?php if (!empty($hobby['hobby_description'])) { // Check if the name field is not empty
                     echo '<p>Hobby description: ' . $hobby['hobby_description'] . '</p>';
                 } ?>
                 <?php if (!empty($hobby['interest'])) { // Check if the name field is not empty
-                    echo '<p>Interest: ' . $hobby['interest']. '</p>';
+                    echo '<p>Interest: ' . $hobby['interest'] . '</p>';
                 } ?>
                 <form method='post' action='/profile-update-hobbies'>
                     <input type='hidden' name='id' value=<?= $hobby['id'] ?>>

@@ -8,7 +8,8 @@ require_once './includes/home_view.inc.php';
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../views/css/default.css">
@@ -17,13 +18,13 @@ require_once './includes/home_view.inc.php';
 </head>
 
 <body class="container">
-    <header class="header"><?php @require 'partials/header.php' ?></header>
+<header class="header"><?php @require 'partials/header.php' ?></header>
 
     <div class="main">
         <div class="workexperience">
             <h1>Workexperience</h1>
             <?php
-            
+
             // This is an SELECT statement that is used to display experiences.
             $userId = $_SESSION["user_id"];
             $sql = "SELECT * FROM work_experience WHERE users_id = :userId";
@@ -32,7 +33,7 @@ require_once './includes/home_view.inc.php';
             $stmt->execute();
             $experiences = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-            foreach ($experiences as $experience) {
+        foreach ($experiences as $experience) {
 
 
             ?>
@@ -46,25 +47,32 @@ require_once './includes/home_view.inc.php';
         </div>
         <div class="hobbys">
             <h1>Hobbys</h1>
-            <?php 
+            <?php
 
-            // This is an SELECT statement that is used to display hobbys.
-            $userId = $_SESSION["user_id"];
-            $sql = "SELECT * FROM hobbies WHERE users_id = :userId";
-            $stmt = $pdo->prepare($sql);
-            $stmt->bindParam(":userId", $userId, PDO::PARAM_INT);
-            $stmt->execute();
-            $hobbys = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-            foreach ($hobbys as $hobby) {
+        // This is an SELECT statement that is used to display hobbys.
+        $userId = $_SESSION["user_id"];
+        $sql = "SELECT * FROM hobbies WHERE users_id = :userId";
+        $stmt = $pdo->prepare($sql);
+        $stmt->bindParam(":userId", $userId, PDO::PARAM_INT);
+        $stmt->execute();
+        $hobbys = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        foreach ($hobbys as $hobby) {
 
 
             ?>
                 <div class="userInfo">
-                    <img src="<?= $hobby['image']; ?>"></img>
-                    <p><b>Name of the hobby:</b> <?= $hobby['name']; ?></p>
-                    <p><b>Description:</b> <?= $hobby['hobby_description']; ?></p>
-                    <p><b>Interest:</b> <?= $hobby['interest']; ?></p>
+                    <img src="<?= $hobby['image'] ?>" alt="Hobby Image">
+                    <?php if (!empty($hobby['name'])) { // Check if the name field is not empty
+                        echo '<p><b>Name of the hobby:</b> ' . $hobby['name'] . '</p>';
+                    } ?>
+                    <?php if (!empty($hobby['hobby_description'])) { // Check if the hobby_description field is not empty
+                        echo '<p><b>Description:</b> ' . $hobby['hobby_description'] . '</p>';
+                    } ?>
+                    <?php if (!empty($hobby['interest'])) { // Check if the interest field is not empty
+                        echo '<p><b>Interest:</b> ' . $hobby['interest'] . '</p>';
+                    } ?>
                 </div>
             <?php } ?>
         </div>
@@ -82,37 +90,36 @@ require_once './includes/home_view.inc.php';
 
             foreach ($educations as $education) {
 
-
             ?>
-                <div class="userInfo">
-                    <p><b>Name of the education:</b> <?= $education['name'] ?></p>
-                </div>
-            <?php } ?>
-        </div>
-        <div class="subjects">
-            <h1>Subjects</h1>
-            <?php
-
-            // This is an SELECT statement that is used to display subjects.
-            $userId = $_SESSION["user_id"];
-            $sql = "SELECT * FROM subjects WHERE users_id = :userId";
-            $stmt = $pdo->prepare($sql);
-            $stmt->bindParam(":userId", $userId, PDO::PARAM_INT);
-            $stmt->execute();
-            $subjects = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-            foreach ($subjects as $subject) {
-
-
-            ?>
-                <div class="userInfo">
-                    <p><b>Name of the subject:</b> <?= $subject['name'] ?></p>
-                    <p><b>Grade: </b><?= $subject['grade'] ?></p>
-                </div>
-            <?php } ?>
-        </div>
+            <div class="userInfo">
+                <p><b>Name of the education:</b> <?= $education['name'] ?></p>
+            </div>
+        <?php } ?>
     </div>
-    <footer class="footer"><?php @require 'partials/footer.php' ?></footer>
+    <div class="subjects">
+        <h1>Subjects</h1>
+        <?php
+
+        // This is an SELECT statement that is used to display subjects.
+        $userId = $_SESSION["user_id"];
+        $sql = "SELECT * FROM subjects WHERE users_id = :userId";
+        $stmt = $pdo->prepare($sql);
+        $stmt->bindParam(":userId", $userId, PDO::PARAM_INT);
+        $stmt->execute();
+        $subjects = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        foreach ($subjects as $subject) {
+
+
+            ?>
+            <div class="userInfo">
+                <p><b>Name of the subject:</b> <?= $subject['name'] ?></p>
+                <p><b>Grade: </b><?= $subject['grade'] ?></p>
+            </div>
+        <?php } ?>
+    </div>
+</div>
+<footer class="footer"><?php @require 'partials/footer.php' ?></footer>
 </body>
 
 </html>

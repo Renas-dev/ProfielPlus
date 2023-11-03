@@ -25,6 +25,7 @@ require_once './includes/config_session.inc.php';
     <a href="/hobby"><button class="button">Hobby</button></a>
     <a href="/education"><button class="button">Education</button></a>
     <a href="/subjects"><button class="button">Subjects</button></a>
+
 </div>
 
 <footer class="footer"><?php @require 'partials/footer.php' ?></footer>
