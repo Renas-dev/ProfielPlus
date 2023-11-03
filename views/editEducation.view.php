@@ -13,10 +13,12 @@ $hobbies = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($hobbies as $hobby) {
     ?>
-    <h3>Edit selected work experience</h3>
-    <form action="../functions/updateEducation.php?id=<?= $selectedId ?>" method="post">
+    <link rel="stylesheet" href="../views/css/default.css">
+    <link rel="stylesheet" href="../views/css/profile-edit.css">
+    <h2>Edit selected education</h2>
+    <form action="../functions/updateEducation.php?id=<?= $selectedId ?>" method="post" class="create">
         <input type="text" name="name" value="<?= $hobby['name'] ?>">
-        <button>submit</button>
+        <button class="button">submit</button>
     </form>
 <?php } ?>
 

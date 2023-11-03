@@ -15,7 +15,7 @@ require_once './includes/dbh.inc.php';
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../views/css/default.css">
-    <link rel="stylesheet" href="../views/css/login.css">
+    <link rel="stylesheet" href="../views/css/profile-edit.css">
 </head>
 <body class="container">
 <header class="header"><?php @require 'partials/header.php' ?></header>
@@ -27,7 +27,7 @@ form to create an hobby there is also an edit and delete button at the display o
 
     <?php
     if (isset($_SESSION["user_id"])) { ?>
-        <form action="../includes/hobbies.inc.php" method="post" enctype="multipart/form-data">
+        <form action="../includes/hobbies.inc.php" method="post" enctype="multipart/form-data" class="create">
             <?php hobby_inputs(); ?>
             <button class="button">submit</button>
         </form>
@@ -47,7 +47,7 @@ form to create an hobby there is also an edit and delete button at the display o
 
         foreach ($hobbies as $hobby) {
             ?>
-            <div>
+            <div class="display">
                 <p hidden='hidden'><?= $hobby['id'] ?></p>
                 <img src="<?= $hobby['image'] ?>" alt="Hobby Image">
                 <?php if (!empty($hobby['name'])) { // Check if the name field is not empty
@@ -61,10 +61,10 @@ form to create an hobby there is also an edit and delete button at the display o
                 } ?>
                 <form method='post' action='/profile-update-hobbies'>
                     <input type='hidden' name='id' value=<?= $hobby['id'] ?>>
-                    <button>Edit</button>
+                    <button class="button">Edit</button>
                 </form>
                 <a href="../functions/deleteHobby.php?id=<?= $hobby['id'] ?>&img=<?= $hobby['image'] ?>">
-                    <button>Delete</button>
+                    <button class="button">Delete</button>
                 </a>
             </div>
             <br>

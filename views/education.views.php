@@ -15,7 +15,7 @@ require_once './includes/dbh.inc.php';
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../views/css/default.css">
-    <link rel="stylesheet" href="../views/css/login.css">
+    <link rel="stylesheet" href="../views/css/profile-edit.css">
 </head>
 <body class="container">
 <header class="header"><?php @require 'partials/header.php' ?></header>
@@ -27,7 +27,7 @@ form to create an education there is also an edit and delete button at the displ
 
     <?php
     if (isset($_SESSION["user_id"])) { ?>
-        <form action="../includes/education.inc.php" method="post">
+        <form action="../includes/education.inc.php" method="post" class="create">
             <?php education_inputs(); ?>
             <button class="button">submit</button>
         </form>
@@ -46,15 +46,15 @@ form to create an education there is also an edit and delete button at the displ
 
         foreach ($educations as $education) {
             ?>
-            <div>
+            <div class="display">
                 <p hidden='hidden'><?= $education['id'] ?></p>
                 <h3><?= $education['name'] ?></h3>
                 <form method='post' action='/profile-update-education'>
                     <input type='hidden' name='id' value=<?= $education['id'] ?>>
-                    <button>Edit</button>
+                    <button class="button">Edit</button>
                 </form>
                 <a href='../functions/deleteEducation.php?id=<?= $education['id'] ?>'>
-                    <button>Delete</button>
+                    <button class="button">Delete</button>
                 </a>
             </div>
             <br>
