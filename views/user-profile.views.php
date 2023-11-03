@@ -54,7 +54,10 @@
 
             ?>
                 <div class="userInfo">
-                    <td><b>Name of the hobby:</b> <?= $hobby['name']; ?></td>
+                    <img src="<?= $hobby['image']; ?>"></img>
+                    <p><b>Name of the hobby:</b> <?= $hobby['name']; ?></p>
+                    <p><b>Description:</b> <?= $hobby['hobby_description']; ?></p>
+                    <p><b>Interest:</b> <?= $hobby['interest']; ?></p>
                 </div>
             <?php } ?>
         </div>
