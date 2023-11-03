@@ -30,17 +30,17 @@
 
 
             ?>
-            <div class="userInfo">
-                <p><b>Field of expertise:</b> <?= $experience['name']; ?></p>
-                <p><b>Colleagues:</b> <?= $experience['colleagues']; ?></p>
-                <p><b>Function:</b> <?= $experience['functionality']; ?></p>
-                <p><b>Experience duration:</b> <?= $experience['start_date']; ?> / <?= $experience['end_date']; ?></p>
-            </div>
-        <?php } ?>
-    </div>
-    <div class="hobbys">
-        <h1>Hobbys</h1>
-        <?php
+                <div class="userInfo">
+                    <p><b>Field of expertise:</b> <?= $experience['name']; ?></p>
+                    <p><b>Colleagues:</b> <?= $experience['colleagues']; ?></p>
+                    <p><b>Function:</b> <?= $experience['functionality']; ?></p>
+                    <p><b>Experience duration:</b> <?= $experience['start_date']; ?> / <?= $experience['end_date']; ?></p>
+                </div>
+            <?php } ?>
+        </div>
+        <div class="hobbys">
+            <h1>Hobbys</h1>
+            <?php
 
         // This is an SELECT statement that is used to display hobbys.
         $userId = $_POST["user_id"];
@@ -55,11 +55,18 @@
 
             ?>
                 <div class="userInfo">
-                    <img src="<?= $hobby['image']; ?>"></img>
-                    <p><b>Name of the hobby:</b> <?= $hobby['name']; ?></p>
-                    <p><b>Description:</b> <?= $hobby['hobby_description']; ?></p>
-                    <p><b>Interest:</b> <?= $hobby['interest']; ?></p>
+                    <img src="<?= $hobby['image'] ?>" alt="Hobby Image">
+                    <?php if (!empty($hobby['name'])) { // Check if the name field is not empty
+                        echo '<p><b>Name of the hobby:</b> ' . $hobby['name'] . '</p>';
+                    } ?>
+                    <?php if (!empty($hobby['hobby_description'])) { // Check if the hobby_description field is not empty
+                        echo '<p><b>Description:</b> ' . $hobby['hobby_description'] . '</p>';
+                    } ?>
+                    <?php if (!empty($hobby['interest'])) { // Check if the interest field is not empty
+                        echo '<p><b>Interest:</b> ' . $hobby['interest'] . '</p>';
+                    } ?>
                 </div>
+                <br>
             <?php } ?>
         </div>
         <div class="education">
@@ -87,15 +94,15 @@
         <h1>Subjects</h1>
         <?php
 
-        // This is an SELECT statement that is used to display subjects.
-        $userId = $_POST["user_id"];
-        $sql = "SELECT * FROM subjects WHERE users_id = :userId";
-        $stmt = $pdo->prepare($sql);
-        $stmt->bindParam(":userId", $userId, PDO::PARAM_INT);
-        $stmt->execute();
-        $subjects = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            // This is an SELECT statement that is used to display subjects.
+            $userId = $_POST["user_id"];
+            $sql = "SELECT * FROM subjects WHERE users_id = :userId";
+            $stmt = $pdo->prepare($sql);
+            $stmt->bindParam(":userId", $userId, PDO::PARAM_INT);
+            $stmt->execute();
+            $subjects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        foreach ($subjects as $subject) {
+            foreach ($subjects as $subject) {
 
 
             ?>
