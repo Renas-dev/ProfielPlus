@@ -14,7 +14,7 @@
     <header class="header"><?php @require 'partials/header.php' ?></header>
     <div class="main">
         <div class="profile-header">
-            <h2>All profiles.</h2>
+            <h1>All profiles.</h1>
         </div>
         <div class="profile-container">
             <?php
@@ -33,10 +33,10 @@
 
                 <div class="profiles-content">
                     <tr>
-                        <td> Profile updated at: <?= $user['updated_at'] ?></td><br>
+                        <td> <b>Profile updated at:</b> <?= $user['updated_at'] ?></td><br>
                         <form method="post" action="/user-profile">
                             <input type="hidden" name="user_id" value="<?= $user['id'] ?>">
-                            <button class="admin-button-update" type="submit">Visit User</button>
+                            <button class="admin-button-update button" type="submit">Visit User</button>
                         </form>
                     </tr>
                 </div>
