@@ -1,0 +1,13 @@
+.main {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.workexperience, .hobbys, .education, .subjects{
+    margin: 10px
+}
+
+.userInfo {
+    padding: 10px;
+}
