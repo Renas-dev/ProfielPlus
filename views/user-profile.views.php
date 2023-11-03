@@ -1,3 +1,8 @@
+<?php
+require_once './includes/config_session.inc.php';
+require_once './includes/home_view.inc.php';
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -6,25 +11,27 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome to ProfielPlus!</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../views/css/default.css">
     <link rel="stylesheet" href="../views/css/user-profile.css">
+    <link rel="stylesheet" href="../views/css/profile.css">
 </head>
 
 <body class="container">
 <header class="header"><?php @require 'partials/header.php' ?></header>
-<div class="main">
-    <div class="workexperience">
-        <h1>Workexperience</h1>
-        <?php
 
-        // This is an SELECT statement that is used to display experiences.
-        $userId = $_POST["user_id"];
-        $sql = "SELECT * FROM work_experience WHERE users_id = :userId";
-        $stmt = $pdo->prepare($sql);
-        $stmt->bindParam(":userId", $userId, PDO::PARAM_INT);
-        $stmt->execute();
-        $experiences = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    <div class="main">
+        <div class="workexperience">
+            <h1>Workexperience</h1>
+            <?php
+
+            // This is an SELECT statement that is used to display experiences.
+            $userId = $_POST["user_id"];
+            $sql = "SELECT * FROM work_experience WHERE users_id = :userId";
+            $stmt = $pdo->prepare($sql);
+            $stmt->bindParam(":userId", $userId, PDO::PARAM_INT);
+            $stmt->execute();
+            $experiences = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         foreach ($experiences as $experience) {
 
@@ -41,6 +48,7 @@
         <div class="hobbys">
             <h1>Hobbys</h1>
             <?php
+
 
         // This is an SELECT statement that is used to display hobbys.
         $userId = $_POST["user_id"];
@@ -83,7 +91,6 @@
 
             foreach ($educations as $education) {
 
-
             ?>
             <div class="userInfo">
                 <p><b>Name of the education:</b> <?= $education['name'] ?></p>
@@ -94,15 +101,15 @@
         <h1>Subjects</h1>
         <?php
 
-            // This is an SELECT statement that is used to display subjects.
-            $userId = $_POST["user_id"];
-            $sql = "SELECT * FROM subjects WHERE users_id = :userId";
-            $stmt = $pdo->prepare($sql);
-            $stmt->bindParam(":userId", $userId, PDO::PARAM_INT);
-            $stmt->execute();
-            $subjects = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        // This is an SELECT statement that is used to display subjects.
+        $userId = $_POST["user_id"];
+        $sql = "SELECT * FROM subjects WHERE users_id = :userId";
+        $stmt = $pdo->prepare($sql);
+        $stmt->bindParam(":userId", $userId, PDO::PARAM_INT);
+        $stmt->execute();
+        $subjects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-            foreach ($subjects as $subject) {
+        foreach ($subjects as $subject) {
 
 
             ?>
@@ -117,5 +124,3 @@
 </body>
 
 </html>
-<?php
-?>

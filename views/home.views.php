@@ -9,6 +9,7 @@
     <title>Welcome to ProfielPlus!</title>
     <link rel="stylesheet" href="../views/css/default.css">
     <link rel="stylesheet" href="../views/css/home.css">
+    <link rel="stylesheet" href="../views/css/profile-edit.css">
 </head>
 
 <body class="container">

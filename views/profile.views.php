@@ -13,7 +13,7 @@ require_once './includes/home_view.inc.php';
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../views/css/default.css">
-    <link rel="stylesheet" href="../views/css/login.css">
+    <link rel="stylesheet" href="../views/css/user-profile.css">
     <link rel="stylesheet" href="../views/css/profile.css">
 </head>
 
@@ -74,6 +74,7 @@ require_once './includes/home_view.inc.php';
                         echo '<p><b>Interest:</b> ' . $hobby['interest'] . '</p>';
                     } ?>
                 </div>
+                <br>
             <?php } ?>
         </div>
         <div class="education">
