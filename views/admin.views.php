@@ -1,5 +1,6 @@
 <?php
 if ($_SESSION['user_username'] == 'admin') {
+    //We make sure to check if the user that's logged in has the same name as Admin before we display the admin page
     ?>
     <!doctype html>
     <html lang="en">
@@ -39,10 +40,9 @@ if ($_SESSION['user_username'] == 'admin') {
                 $sql = "select * from users";
                 $stmt = $pdo->prepare($sql);
                 $stmt->execute();
-
                 $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
                 foreach ($users as $user) {
+                    // We run a sql query that selects all users from our database and loops through all users and displays them.
                     ?>
                     <tr>
                         <td><?= $user['id'] ?></td>
