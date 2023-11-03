@@ -3,9 +3,8 @@ $id = $_POST['userid'];
 $sql = "select * from users where id = $id ";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
-
 $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+//We first catch the user id with the POST SUPERGLOBAL and then select all data from the student and display this.
 ?>
     <!doctype html>
     <html lang="en">

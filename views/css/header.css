@@ -4,21 +4,22 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: white   ;
+    background: white;
     box-shadow: 0 2px 2px -2px gray;
 }
 
-.nav ul{
+.nav ul {
     display: flex;
     list-style-type: none;
 }
-.nav ul li a{
+
+.nav ul li a {
     padding: 0 20px;
     text-decoration: none;
     color: #5a5b5a;
 }
 
-.nav a::after{
+.nav a::after {
     content: '';
     display: block;
     height: 4px;
@@ -26,10 +27,12 @@
     background: #000000;
     transition: all .5s;
 }
-.nav a:hover::after{
+
+.nav a:hover::after {
     width: 100%;
 }
-.Login-button{
+
+.Login-button {
     padding: 10px 20px;
     background-color: white;
     color: grey;
