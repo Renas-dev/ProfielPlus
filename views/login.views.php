@@ -34,7 +34,7 @@ form to login else it won't. The same for logout if the user is logged in it sho
             <button class="button">Login</button>
         </form>
 
-        <a href="/forgot-password">Forgot password?</a>
+<!--        <a href="/forgot-password">Forgot password?</a>-->
     <?php } ?>
 
 
