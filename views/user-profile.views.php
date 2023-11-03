@@ -54,24 +54,27 @@
 
 
             ?>
-            <div class="userInfo">
-                <td><b>Name of the hobby:</b> <?= $hobby['name']; ?></td>
-            </div>
-        <?php } ?>
-    </div>
-    <div class="education">
-        <h1>Education</h1>
-        <?php
+                <div class="userInfo">
+                    <img src="<?= $hobby['image']; ?>"></img>
+                    <p><b>Name of the hobby:</b> <?= $hobby['name']; ?></p>
+                    <p><b>Description:</b> <?= $hobby['hobby_description']; ?></p>
+                    <p><b>Interest:</b> <?= $hobby['interest']; ?></p>
+                </div>
+            <?php } ?>
+        </div>
+        <div class="education">
+            <h1>Education</h1>
+            <?php
 
-        // This is an SELECT statement that is used to display educations.
-        $userId = $_POST["user_id"];
-        $sql = "SELECT * FROM education WHERE users_id = :userId";
-        $stmt = $pdo->prepare($sql);
-        $stmt->bindParam(":userId", $userId, PDO::PARAM_INT);
-        $stmt->execute();
-        $educations = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            // This is an SELECT statement that is used to display educations.
+            $userId = $_POST["user_id"];
+            $sql = "SELECT * FROM education WHERE users_id = :userId";
+            $stmt = $pdo->prepare($sql);
+            $stmt->bindParam(":userId", $userId, PDO::PARAM_INT);
+            $stmt->execute();
+            $educations = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        foreach ($educations as $education) {
+            foreach ($educations as $education) {
 
 
             ?>
