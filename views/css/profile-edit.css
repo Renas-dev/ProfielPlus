@@ -7,9 +7,10 @@ h2 {
     text-align: center;
 }
 
-form {
-    width: 20%;
-    margin: 0 40% 0 40%;
+.create {
+    display: inline-block;
+    width: 30%;
+    margin: 0 35% 0 35%;
     padding: 10px 0 10px 0;
 }
 
@@ -30,25 +31,8 @@ input {
     border-radius: 5px;
 }
 
-.register {
-    margin-top: 60px;
-}
-
-.registerText {
-    text-align: center;
-    text-decoration: none;
-}
-
-.registerText a {
-    text-decoration: none;
-    color: blue;
-}
-
-.login-status {
-    text-align: center;
-}
-
 .form-error {
+    margin-top: 15px;
     text-align: center;
     color: red;
 }
@@ -58,6 +42,15 @@ input {
     color: green;
 }
 
-.hobby {
-    display: block;
+.display {
+    display: table;
+    margin: auto;
+    width: 30%;
+    height: auto;
+    padding-top: 30px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
 }

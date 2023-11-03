@@ -20,7 +20,8 @@ require_once './includes/config_session.inc.php';
 <header class="header"><?php @require 'partials/header.php' ?></header>
 
 <div class="main">
-    <a href="/work-experience"><button class="button">Experience</button></a>
+    <h2>Edit Profile</h2>
+    <a href="/work-experience"><button class="button">Work experience</button></a>
     <a href="/hobby"><button class="button">Hobby</button></a>
     <a href="/education"><button class="button">Education</button></a>
     <a href="/subjects"><button class="button">Subjects</button></a>

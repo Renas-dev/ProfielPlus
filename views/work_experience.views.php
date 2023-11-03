@@ -14,7 +14,7 @@ require_once './includes/dbh.inc.php';
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../views/css/default.css">
-    <link rel="stylesheet" href="../views/css/login.css">
+    <link rel="stylesheet" href="../views/css/profile-edit.css">
 </head>
 <body class="container">
 <header class="header"><?php @require 'partials/header.php' ?></header>
@@ -26,7 +26,7 @@ form to create a work experience there is also an edit and delete button at the 
 
     <?php
     if (isset($_SESSION["user_id"])) { ?>
-        <form action="../includes/workexperience.inc.php" method="post">
+        <form action="../includes/workexperience.inc.php" method="post" class="create">
             <?php experience_inputs() ?>
             <button class="button">submit</button>
         </form>
@@ -45,7 +45,7 @@ form to create a work experience there is also an edit and delete button at the 
 
         foreach ($experiences as $experience) {
             ?>
-            <div>
+            <div class="display">
                 <p hidden='hidden'>" . $experience['id'] . "</p>
                 <h3><?= $experience['name'] ?></h3>
                 <p>Colleagues: <?= $experience['colleagues'] ?></p>
@@ -54,10 +54,10 @@ form to create a work experience there is also an edit and delete button at the 
                 <p>End Date: <?= $experience['end_date'] ?></p>
                 <form method='post' action='/profile-update-experience'>
                     <input type='hidden' name='id' value="<?= $experience['id'] ?>">
-                    <button>Edit</button>
+                    <button class="button">Edit</button>
                 </form>
                 <a href='../functions/deleteExperience.php?id=<?= $experience['id'] ?>'>
-                    <button>Delete</button>
+                    <button class="button">Delete</button>
                 </a>
             </div>
             <br>

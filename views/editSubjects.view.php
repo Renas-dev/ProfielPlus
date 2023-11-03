@@ -13,11 +13,13 @@ $subjects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($subjects as $subject) {
     ?>
-    <h3>Edit selected work experience</h3>
-    <form action="../functions/updateSubjects.php?id=<?= $selectedId ?>" method="post">
+    <link rel="stylesheet" href="../views/css/default.css">
+    <link rel="stylesheet" href="../views/css/profile-edit.css">
+    <h2>Edit selected subject</h2>
+    <form action="../functions/updateSubjects.php?id=<?= $selectedId ?>" method="post" class="create">
         <input type="text" name="name" value="<?= $subject['name'] ?>">
         <input type="text" name="grade" value="<?= $subject['grade'] ?>">
-        <button>submit</button>
+        <button class="button">submit</button>
     </form>
 <?php } ?>
 

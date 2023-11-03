@@ -14,7 +14,7 @@ require_once './includes/dbh.inc.php';
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../views/css/default.css">
-    <link rel="stylesheet" href="../views/css/login.css">
+    <link rel="stylesheet" href="../views/css/profile-edit.css">
 </head>
 <body class="container">
 <header class="header"><?php @require 'partials/header.php' ?></header>
@@ -26,7 +26,7 @@ form to create a subject there is also an edit and delete button at the display 
 
     <?php
     if (isset($_SESSION["user_id"])) { ?>
-        <form action="../includes/subjects.inc.php" method="post">
+        <form action="../includes/subjects.inc.php" method="post" class="create">
             <?php subject_inputs(); ?>
             <button class="button">submit</button>
         </form>
@@ -45,16 +45,16 @@ form to create a subject there is also an edit and delete button at the display 
 
         foreach ($subjects as $subject) {
             ?>
-            <div>
+            <div class="display">
                 <p hidden='hidden'><?= $subject['id'] ?></p>
                 <h3><?= $subject['name'] ?></h3>
                 <h3><?= $subject['grade'] ?></h3>
                 <form method='post' action='/profile-update-subjects'>
                     <input type='hidden' name='id' value=<?= $subject['id'] ?>>
-                    <button>Edit</button>
+                    <button class="button">Edit</button>
                 </form>
                 <a href='../functions/deleteSubject.php?id=<?= $subject['id'] ?>'>
-                    <button>Delete</button>
+                    <button class="button">Delete</button>
                 </a>
             </div>
             <br>
