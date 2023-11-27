@@ -15,6 +15,7 @@ require_once 'includes/login_view.inc.php';
     <title>Login to ProfielPlus</title>
     <link rel="stylesheet" href="../views/css/default.css">
     <link rel="stylesheet" href="../views/css/login.css">
+    <script src="../views/scripts/logoutAlert.js"></script>
 </head>
 <body class="container">
 <header class="header"><?php @require 'partials/header.php' ?></header>
@@ -57,7 +58,7 @@ form to login else it won't. The same for logout if the user is logged in it sho
         <h2>Logout</h2>
 
         <form action="../includes/logout.inc.php" method="post">
-            <button class="button">Logout</button>
+            <button onclick="logoutAlert()" class="button">Logout</button>
         </form>
     <?php } ?>
 </div>
