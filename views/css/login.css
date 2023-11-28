@@ -1,7 +1,11 @@
+/* This is the general styling for the whole login. */
+
 * {
     margin: 0;
     padding: 0;
 }
+
+/* This is the styling for the forums. */
 
 h2 {
     text-align: center;
@@ -30,6 +34,8 @@ input {
     border-radius: 5px;
 }
 
+/* This is the styling for register. */
+
 .register {
     margin-top: 60px;
 }
@@ -44,9 +50,13 @@ input {
     color: blue;
 }
 
+/* This lets you know if you logged in. */
+
 .login-status {
     text-align: center;
 }
+
+/* This is the styling for succes and error pop ups. */
 
 .form-error {
     text-align: center;
@@ -57,6 +67,8 @@ input {
     text-align: center;
     color: green;
 }
+
+/* This is the styling for the hobby pop ups. */
 
 .hobby {
     display: block;

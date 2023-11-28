@@ -1,3 +1,5 @@
+/* This is the general styling for the whole admin home. */
+
 .admin-container {
     display: flex;
     justify-content: center;
@@ -14,6 +16,8 @@
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
+
+/* These are the styling for each button on the admin pages. */
 
 .admin-button {
     padding: 8px 16px;

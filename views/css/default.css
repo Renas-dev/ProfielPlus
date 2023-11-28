@@ -1,3 +1,5 @@
+/* This is the general styling for each page. */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +7,8 @@
     max-height: 100px;
     font-family: sans-serif;
 }
+
+/* This is the grid template goes over every website. */
 
 .container {
     display: grid;

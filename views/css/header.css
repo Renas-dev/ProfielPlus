@@ -1,3 +1,5 @@
+/* This is the general styling for the whole header. */
+
 .header {
     height: 100px;
     width: 100vw;
@@ -8,16 +10,22 @@
     box-shadow: 0 2px 2px -2px gray;
 }
 
+
+
 .nav ul {
     display: flex;
     list-style-type: none;
 }
+
+
 
 .nav ul li a {
     padding: 0 20px;
     text-decoration: none;
     color: #5a5b5a;
 }
+
+/* This is adds an animation to the nav button on hover. */
 
 .nav a::after {
     content: '';
@@ -28,9 +36,13 @@
     transition: all .5s;
 }
 
+/* This is keeps the animation under each nav button. */
+
 .nav a:hover::after {
     width: 100%;
 }
+
+/* This is the styling for the login button. */
 
 .Login-button {
     padding: 10px 20px;
