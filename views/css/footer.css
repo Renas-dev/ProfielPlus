@@ -1,4 +1,6 @@
-/* This is the general styling for the whole footer. */
+/* We give the footer a set height of 100pixels, and make it display over the entire screen with a 100vw
+with display flex we space all content evenly in the footer and center the items.
+ */
 
 .about-us {
     height: 100px;
@@ -9,21 +11,20 @@
     background: #151515;
 }
 
-/* This styles li. */
+/* We remove the bullet points by not giving the list style type none and give it a white text  */
 
 .about-us-content li {
     list-style-type: none;
     color: white;
 }
 
-/* This gives the logos in the footer a max witdh. */
+/* The logo will have a max width of 10% making it a nice size next to the text */
 
 .socials-logo {
     max-width: 10%;
 }
 
-/* This styles the a. */
-
+/* We give the about us text a orange color */
 .about-us a {
     text-decoration: none;
     color: orange;

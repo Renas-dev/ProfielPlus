@@ -13,7 +13,7 @@ $hobbies = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($hobbies as $hobby) {
     ?>
-    <link rel="stylesheet" href="../views/css/default.css">
+    <link rel="stylesheet" href="../views/css/layout.css">
     <link rel="stylesheet" href="../views/css/profile-edit.css">
     <h2>Edit selected hobby</h2>
     <form action="../functions/updateHobby.php?id=<?= $selectedId ?>&img=<?= $hobby['image'] ?>" method="post"

@@ -1,5 +1,7 @@
-/* This is the general styling for the whole header. */
-
+/*
+we target the header element with .header, we give it a 100px height and span the header over the entire viewport.
+We use flexbox to horizontally center all of the child elements with equal spacing and give it a white background with a gray box shadow.
+*/
 .header {
     height: 100px;
     width: 100vw;
@@ -7,27 +9,26 @@
     justify-content: space-around;
     align-items: center;
     background: white;
-    box-shadow: 0 2px 2px -2px gray;
+    box-shadow: 0 2px 2px -2px rgb(128, 128, 128);
 }
-
-
-
-.nav ul {
+/*
+For the nav item styling we display it as flex so we can display them horizontally.
+We give it a list style type non to remove the bullet-points from our UL.
+Padding 20 gives a 20px padding between the items and we give it no text decoration.
+Finally we give the text a gray color.
+*/
+.navigation-bar ul {
     display: flex;
     list-style-type: none;
 }
-
-
-
-.nav ul li a {
-    padding: 0 20px;
+.navigation-bar ul li a {
+    padding: 20px;
     text-decoration: none;
     color: #5a5b5a;
 }
 
-/* This is adds an animation to the nav button on hover. */
-
-.nav a::after {
+/* If a user hovers over an item in the nav bar we add a black bar that slides over the hovered nav bar */
+.navigation-bar a::after {
     content: '';
     display: block;
     height: 4px;
@@ -36,14 +37,11 @@
     transition: all .5s;
 }
 
-/* This is keeps the animation under each nav button. */
-
-.nav a:hover::after {
+/* This is keeps the black bar under the active nav bar item*/
+.navigation-bar a:hover::after {
     width: 100%;
 }
-
 /* This is the styling for the login button. */
-
 .Login-button {
     padding: 10px 20px;
     background-color: white;
@@ -54,4 +52,3 @@
     border-radius: 50px;
     cursor: pointer;
 }
-

@@ -13,7 +13,7 @@ require_once 'includes/login_view.inc.php';
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login to ProfielPlus</title>
-    <link rel="stylesheet" href="../views/css/default.css">
+    <link rel="stylesheet" href="../views/css/layout.css">
     <link rel="stylesheet" href="../views/css/login.css">
     <script src="../views/scripts/logoutAlert.js"></script>
 </head>
@@ -22,7 +22,7 @@ require_once 'includes/login_view.inc.php';
 
 <!-- The login file checks if a user is not logged in by checking the session and if so it displays the
 form to login else it won't. The same for logout if the user is logged in it shows the logout button else it doesn't display  -->
-<div class="main">
+<div class="page-content">
     <h3><?php output_username(); ?></h3>
 
     <?php

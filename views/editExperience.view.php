@@ -13,7 +13,7 @@ $experiences = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($experiences as $experience) {
     ?>
-    <link rel="stylesheet" href="../views/css/default.css">
+    <link rel="stylesheet" href="../views/css/layout.css">
     <link rel="stylesheet" href="../views/css/profile-edit.css">
     <h2>Edit selected work experience</h2>
     <form action="../functions/updateExperience.php?id=<?= $selectedId ?>" method="post" class="create">

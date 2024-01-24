@@ -13,7 +13,7 @@ require_once './includes/dbh.inc.php';
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="../views/css/default.css">
+    <link rel="stylesheet" href="../views/css/layout.css">
     <link rel="stylesheet" href="../views/css/profile-edit.css">
 </head>
 <body class="container">
@@ -21,7 +21,7 @@ require_once './includes/dbh.inc.php';
 
 <!-- The subjects file checks if a user is logged in by checking the session and if so it displays the
 form to create a subject there is also an edit and delete button at the display of the created subjects. -->
-<div class="main">
+<div class="page-content">
     <h2>Create Subject</h2>
 
     <?php

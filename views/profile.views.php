@@ -12,7 +12,7 @@ require_once './includes/home_view.inc.php';
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="../views/css/default.css">
+    <link rel="stylesheet" href="../views/css/layout.css">
     <link rel="stylesheet" href="../views/css/user-profile.css">
     <link rel="stylesheet" href="../views/css/profile.css">
 </head>
@@ -20,7 +20,7 @@ require_once './includes/home_view.inc.php';
 <body class="container">
 <header class="header"><?php @require 'partials/header.php' ?></header>
 
-    <div class="main">
+    <div class="page-content">
         <div class="workexperience">
             <h1>Workexperience</h1>
             <?php
