@@ -7,13 +7,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Students</title>
-    <link rel="stylesheet" href="../views/css/default.css">
+    <link rel="stylesheet" href="../views/css/layout.css">
     <link rel="stylesheet" href="../views/css/students.css">
 </head>
 
 <body class="container">
     <header class="header"><?php @require 'partials/header.php' ?></header>
-    <div class="main">
+    <div class="page-content">
         <div class="profile-header">
             <h1>All profiles.</h1>
         </div>

@@ -12,13 +12,13 @@ require_once 'includes/home_view.inc.php';
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../views/css/default.css">
+    <link rel="stylesheet" href="../views/css/layout.css">
     <link rel="stylesheet" href="../views/css/login.css">
     <title>Register Page</title>
 </head>
 <body class="container">
 <header class="header"><?php @require 'partials/header.php' ?></header>
-<div class="main">
+<div class="page-content">
     <h2>Register</h2>
 
     <!-- This form sends you to signup.inc.php and uses the signup_inputs() function to display the form.

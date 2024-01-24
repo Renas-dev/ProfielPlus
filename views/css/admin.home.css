@@ -1,16 +1,16 @@
-/* This is the general styling for the whole admin home. */
+/* For the admin container class we use a flex container and center the items horizontally and ensure that the items stay on the same line */
 
 .admin-container {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
 }
-
+/*We center the text of the content in the table, and collapse our border between the table cells for a clean table view.*/
 .admin-table {
     text-align: center;
     border-collapse: collapse;
 }
-
+/*We style the content of the table th & td to have a padding of 8 px align the text to the left and add a border per item displayed*/
 .admin-table th, td {
     padding: 8px;
     text-align: left;
@@ -28,12 +28,12 @@
     background-color: #befabe;
     text-align: start;
 }
-
+/*We put our buttons in a flex and display them in columns*/
 .button-container {
     display: flex;
     flex-direction: column;
 }
-
+/*The update button styling and size,this was created and designed with w3schools*/
 .admin-button-update {
     padding: 8px 16px;
     margin: 4px 2px;
@@ -45,7 +45,7 @@
     border: 2px solid #008CBA;
 
 }
-
+/*The delete button styling and size,this was created and designed with w3schools*/
 .admin-button-delete {
     padding: 8px 16px;
     margin: 4px 2px;

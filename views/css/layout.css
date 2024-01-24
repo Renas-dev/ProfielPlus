@@ -1,0 +1,32 @@
+/*We define a border box for our website layout, a margin 0 and padding 0 with a max height of 100px for all elements and a sans serif font */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-height: 100px;
+    font-family: sans-serif;
+}
+
+/* We setup a grid layout for out container where we pre define our values and grid areas. */
+
+.container {
+    display: grid;
+    grid-template-rows: 100px 100vh 100px;
+    grid-gap: 10px;
+    grid-template-areas: 'header' 'main' 'footer';
+}
+/*We define what grid area belongs to what class down here.  */
+.container .header {
+    grid-area: header;
+}
+
+.container .page-content {
+    grid-area: main;
+    min-height: 100vh;
+}
+
+.container .footer {
+    grid-area: footer;
+    color: white;
+}
