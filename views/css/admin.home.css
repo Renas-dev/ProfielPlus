@@ -5,13 +5,12 @@
     justify-content: center;
     flex-wrap: nowrap;
 }
-/*We center the text of the content in the table, and collapse our border between the table cells for a clean table view.*/
-.admin-table {
+/*We center the text of the content in the table, and collapse our border between the table cells for a clean table view.
+We style the content of the table th & td to have a padding of 8 px align the text to the left and add a border per item displayed*/
+
+.admin-table th, td {
     text-align: center;
     border-collapse: collapse;
-}
-/*We style the content of the table th & td to have a padding of 8 px align the text to the left and add a border per item displayed*/
-.admin-table th, td {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
