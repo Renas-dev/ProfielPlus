@@ -1,11 +1,15 @@
 /* This is the general styling for the whole admin forum. */
 
+/* The form tag gets centered by the margin 40% 40% on the left and ride side. It has a width of 20% to fill in. 
+The padding is there so it doesnt stick to the left and right side of the form.  */
 form {
     width: 20%;
     margin: 0 40% 0 40%;
     padding: 10px 0 10px 0;
 }
 
+/* The input has 100% width so it takes full width of the form itself. The margin makes it so it doesnt stick to eachothr the input fields
+then we have a padding of 10px that is for the text so that it doesnt stick to the input field itself it has some space around it of 10px. */
 input {
     display: block;
     width: 100%;
@@ -14,6 +18,8 @@ input {
     font-size: 16px;
 }
 
+/* The button takes 40% of the form where its also centered by using margin. Total of 30% of each side. The padding of 5px makes it so
+the text inside has 5px on each side so the button becomes bigger to have some spacing around. The border-radius makes it so the corners are rounded. */
 .admin-button {
     width: 40%;
     margin: 0 30% 0 30%;

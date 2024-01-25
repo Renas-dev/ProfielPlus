@@ -1,24 +1,26 @@
 /* This is the general styling for the whole home. */
 
+
+/* The page-content is the middle part of the website in the grid. Here we define the code of margin on page-content
+ which adds a border of 20px around the page-content part. */
 .page-content {
     margin: 20px;
 }
 
+/* The margin on the h3 for the homepage adds a margin of 50px around the h3 text.
+We have done this so it adds more spacing around it and on the website */
 h3 {
     margin: 50px;
 
 }
 
-.main-img {
-    height: 100px;
-    width: 100px;
-}
-
+/* The about class has a float right as the page was empty as it was on the left side and we chose to move it to the right */
 .about {
     float: right;
 
 }
 
+/* The about-coders class are also on the right side as its part of the about. So we moved it right to be under the about us */
 .about-coders {
     float: right;
     margin: auto;

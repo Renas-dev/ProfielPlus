@@ -16,6 +16,7 @@
     grid-gap: 10px;
     grid-template-areas: 'header' 'main' 'footer';
 }
+
 /*We define what grid area belongs to what class down here.  */
 .container .header {
     grid-area: header;
