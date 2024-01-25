@@ -13,7 +13,6 @@ require_once './includes/home_view.inc.php';
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../views/css/layout.css">
-    <link rel="stylesheet" href="../views/css/user-profile.css">
     <link rel="stylesheet" href="../views/css/profile.css">
 </head>
 <!--The container class has the grid layout property to start our grid. -->

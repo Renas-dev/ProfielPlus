@@ -1,20 +1,16 @@
-/* This is the general styling for students page. */
-
-.profile-header {
-    margin-top: 20px;
-    margin-left: 20px;
+/* This adds a margin of 20px to the left and right side of the profile-header and profile-container */
+.profile-header .profile-container {
+    margin: 0 20px 0 20px;
 }
 
-.profile-container {
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
+/* This adds a margin of 20px around the profiles-content */
 .profiles-content {
     margin: 20px;
     
 }
 
+/* This button has 5px padding so the text inside the button doesnt reach the border of the button itself.
+and has a border-radius of 5px to make the corners rounded */
 .button {
     padding: 5px;
     background-color: black;

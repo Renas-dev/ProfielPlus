@@ -1,12 +1,12 @@
-/* This is the general styling. */
-
-
+/* The page-content makes usage of the flex which spreads the content to not overlap eachother. We also use the
+justify-content so the content spreads evenly around. */
 .page-content {
     display: flex;
     justify-content: space-around;
     padding: 10px;
 }
 
+/* This adds margin to every content separately */
 .workexperience, .hobbys, .education, .subjects {
     margin: 10px
 }
