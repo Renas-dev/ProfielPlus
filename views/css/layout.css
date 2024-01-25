@@ -1,5 +1,4 @@
 /*We define a border box for our website layout, a margin 0 and padding 0 with a max height of 100px for all elements and a sans serif font */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,16 +15,18 @@
     grid-gap: 10px;
     grid-template-areas: 'top-content' 'page-content' 'bottom-content';
 }
-/*We define what grid area belongs to what class down here.  */
+/*We define what grid area belongs to what class down here. */
+
+/*defines an area for the header of the website*/
 .container .top-content {
     grid-area: top-content;
 }
-
+/*defines an area for the page content and giving it a min vh of 100*/
 .container .page-content {
     grid-area: page-content;
     min-height: 100vh;
 }
-
+/*defines an area for the footer of the website*/
 .container .bottom-content {
     grid-area: bottom-content;
     color: white;
