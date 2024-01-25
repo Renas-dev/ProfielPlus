@@ -17,27 +17,27 @@ require_once 'includes/login_view.inc.php';
     <link rel="stylesheet" href="../views/css/login.css">
 </head>
 
+<!--The container class has the grid layout property to start our grid. -->
+
 <body class="container">
-    <header class="header"><?php @require 'partials/header.php' ?></header>
-
-    <!-- The login file checks if a user is not logged in by checking the session and if so it displays the
-form to login else it won't. The same for logout if the user is logged in it shows the logout button else it doesn't display  -->
+    <!--The header has a top-content which uses the top-content section in our grid layout,
+we also require our header with php to display our website header that can be found in the views directory-->
+    <header class="top-content"><?php @require 'partials/header.php' ?></header>
+    <!--The div with the page-content class has the page-content section in our grid layout. ensuring a min height of 100vw-->
     <div class="page-content">
+        <!-- The login file checks if a user is not logged in by checking the session and if so it displays the
+    form to login else it won't. The same for logout if the user is logged in it shows the logout button else it doesn't display  -->
         <h3><?php output_username(); ?></h3>
-
         <?php
         if (!isset($_SESSION["user_id"])) { ?>
             <h2>Login</h2>
-
             <form action="../includes/login.inc.php" method="post">
                 <input type="text" name="username" placeholder="Username">
                 <input type="password" name="pwd" placeholder="Password">
                 <button class="button">Login</button>
             </form>
-
-            <!--        <a href="/forgot-password">Forgot password?</a>-->
+            <!--       <a href="/forgot-password">Forgot password?</a>-->
         <?php } ?>
-
 
         <?php
         check_login_errors();
@@ -56,14 +56,14 @@ form to login else it won't. The same for logout if the user is logged in it sho
         if (isset($_SESSION["user_id"])) { ?>
             <br>
             <h2>Logout</h2>
-
             <form action="../includes/logout.inc.php" method="post">
                 <button onclick="logoutAlert()" class="button">Logout</button>
             </form>
         <?php } ?>
     </div>
-
-    <footer class="footer"><?php @require 'partials/footer.php' ?></footer>
+    <!--The footer has a bottom-content which uses the bottom-content section in our grid layout,
+we also require our footer with php to display our website header that can be found in the views directory-->
+    <footer class="bottom-content"><?php @require 'partials/footer.php' ?></footer>
 </body>
 
 </html>

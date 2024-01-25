@@ -18,22 +18,21 @@ require_once './includes/dbh.inc.php';
     <link rel="stylesheet" href="../views/css/profile-edit.css">
     <script src="../views/scripts/deleteConfirmation.js"></script>
 </head>
-
 <body class="container">
-    <header class="header"><?php @require 'partials/header.php' ?></header>
+<header class="header"><?php @require 'partials/header.php' ?></header>
 
-    <!-- The hobby file checks if a user is logged in by checking the session and if so it displays the
+<!-- The hobby file checks if a user is logged in by checking the session and if so it displays the
 form to create an hobby there is also an edit and delete button at the display of the created hobbies. -->
-    <div class="page-content">
-        <h2>Create Hobby</h2>
+<div class="page-content">
+    <h2>Create Hobby</h2>
 
-        <?php
-        if (isset($_SESSION["user_id"])) { ?>
-            <form action="../includes/hobbies.inc.php" method="post" enctype="multipart/form-data" class="create">
-                <?php hobby_inputs(); ?>
-                <button class="button">submit</button>
-            </form>
-        <?php } else echo "You are not logged in!" ?>
+    <?php
+    if (isset($_SESSION["user_id"])) { ?>
+        <form action="../includes/hobbies.inc.php" method="post" enctype="multipart/form-data" class="create">
+            <?php hobby_inputs(); ?>
+            <button class="button">submit</button>
+        </form>
+    <?php } else echo "You are not logged in!" ?>
 
         <?php
         check_hobby_errors();
@@ -47,36 +46,35 @@ form to create an hobby there is also an edit and delete button at the display o
             $hobbies = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
-            foreach ($hobbies as $hobby) {
-        ?>
-                <div class="display">
-                    <p hidden='hidden'><?= $hobby['id'] ?></p>
-                    <img src="<?= $hobby['image'] ?>" alt="Hobby Image">
-                    <?php if (!empty($hobby['name'])) { // Check if the name field is not empty
-                        echo '<p>Hobby: ' . $hobby['name'] . '</p>';
-                    } ?>
-                    <?php if (!empty($hobby['hobby_description'])) { // Check if the name field is not empty
-                        echo '<p>Hobby description: ' . $hobby['hobby_description'] . '</p>';
-                    } ?>
-                    <?php if (!empty($hobby['interest'])) { // Check if the name field is not empty
-                        echo '<p>Interest: ' . $hobby['interest'] . '</p>';
-                    } ?>
-                    <form method='post' action='/profile-update-hobbies'>
-                        <input type='hidden' name='id' value=<?= $hobby['id'] ?>>
-                        <button class="button">Edit</button>
-                    </form>
-
-                    <a href="#" onclick="confirmDelete(<?= $hobby['id'] ?>, '../functions/deleteHobby.php?id=<?= $hobby['id'] ?>');">
-                        <button class="button">Delete</button>
-                    </a>
-                </div>
-                <br>
-        <?php
-            }
+        foreach ($hobbies as $hobby) {
+            ?>
+            <div class="display">
+                <p hidden='hidden'><?= $hobby['id'] ?></p>
+                <img src="<?= $hobby['image'] ?>" alt="Hobby Image">
+                <?php if (!empty($hobby['name'])) { // Check if the name field is not empty
+                    echo '<p>Hobby: ' . $hobby['name'] . '</p>';
+                } ?>
+                <?php if (!empty($hobby['hobby_description'])) { // Check if the name field is not empty
+                    echo '<p>Hobby description: ' . $hobby['hobby_description'] . '</p>';
+                } ?>
+                <?php if (!empty($hobby['interest'])) { // Check if the name field is not empty
+                    echo '<p>Interest: ' . $hobby['interest'] . '</p>';
+                } ?>
+                <form method='post' action='/profile-update-hobbies'>
+                    <input type='hidden' name='id' value=<?= $hobby['id'] ?>>
+                    <button class="button">Edit</button>
+                </form>
+                <a href="../functions/deleteHobby.php?id=<?= $hobby['id'] ?>&img=<?= $hobby['image'] ?>">
+                    <button class="button">Delete</button>
+                </a>
+            </div>
+            <br>
+            <?php
         }
-        ?>
-    </div>
-    <footer class="footer"><?php @require 'partials/footer.php' ?></footer>
+    }
+    ?>
+</div>
+<footer class="footer"><?php @require 'partials/footer.php' ?></footer>
 </body>
 
 </html>

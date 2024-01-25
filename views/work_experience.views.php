@@ -17,15 +17,17 @@ require_once './includes/dbh.inc.php';
     <link rel="stylesheet" href="../views/css/profile-edit.css">
     <script src="../views/scripts/deleteConfirmation.js"></script>
 </head>
+<!--The container class has the grid layout property to start our grid. -->
 
 <body class="container">
-    <header class="header"><?php @require 'partials/header.php' ?></header>
-
-    <!-- The work experience file checks if a user is logged in by checking the session and if so it displays the
-form to create a work experience there is also an edit and delete button at the display of the created work experiences. -->
+    <!--The header has a top-content which uses the top-content section in our grid layout,
+we also require our header with php to display our website header that can be found in the views directory-->
+    <header class="top-content"><?php @require 'partials/header.php' ?></header>
+    <!--The div with the page-content class has the page-content section in our grid layout. ensuring a min height of 100vw-->
     <div class="page-content">
         <h2>Create Work experience</h2>
-
+        <!-- The work experience file checks if a user is logged in by checking the session and if so it displays the
+    form to create a work experience there is also an edit and delete button at the display of the created work experiences. -->
         <?php
         if (isset($_SESSION["user_id"])) { ?>
             <form action="../includes/workexperience.inc.php" method="post" class="create">
@@ -68,7 +70,9 @@ form to create a work experience there is also an edit and delete button at the 
         }
         ?>
     </div>
-    <footer class="footer"><?php @require 'partials/footer.php' ?></footer>
+    <!--The footer has a bottom-content which uses the bottom-content section in our grid layout,
+we also require our footer with php to display our website header that can be found in the views directory-->
+    <footer class="bottom-content"><?php @require 'partials/footer.php' ?></footer>
 </body>
 
 </html>
