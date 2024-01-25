@@ -2,7 +2,7 @@
 we target the header element with .header, we give it a 100px height and span the header over the entire viewport.
 We use flexbox to horizontally center all of the child elements with equal spacing and give it a white background with a gray box shadow.
 */
-.header {
+.top-content {
     height: 100px;
     width: 100vw;
     display: flex;

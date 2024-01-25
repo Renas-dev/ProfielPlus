@@ -14,19 +14,19 @@
     display: grid;
     grid-template-rows: 100px 100vh 100px;
     grid-gap: 10px;
-    grid-template-areas: 'header' 'main' 'footer';
+    grid-template-areas: 'top-content' 'page-content' 'bottom-content';
 }
 /*We define what grid area belongs to what class down here.  */
-.container .header {
-    grid-area: header;
+.container .top-content {
+    grid-area: top-content;
 }
 
 .container .page-content {
-    grid-area: main;
+    grid-area: page-content;
     min-height: 100vh;
 }
 
-.container .footer {
-    grid-area: footer;
+.container .bottom-content {
+    grid-area: bottom-content;
     color: white;
 }
